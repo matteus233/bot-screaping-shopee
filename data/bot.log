@@ -1526,3 +1526,36 @@
 2026-03-12 16:14:37 [info] Aprovados: 370 produtos
 2026-03-12 16:14:37 [info] Limite diario/janela atingido. Nenhum envio neste ciclo.
 2026-03-12 16:14:37 [info] Ciclos agendados a cada 60 minuto(s).
+2026-03-12 16:16:29 [info] ═══════════════════════════════════
+2026-03-12 16:16:29 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 16:16:29 [info] ═══════════════════════════════════
+2026-03-12 16:16:29 [info] 📡 Canais ativos: Telegram
+2026-03-12 16:16:29 [info] Shopee Promo Bot iniciando...
+2026-03-12 16:16:29 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-12 16:16:29 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 16:16:29 [info] Iniciando ciclo de promocoes...
+2026-03-12 16:16:30 [error] [Telegram] Falha ao iniciar polling: Error: 409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-03-12 16:16:31 [info] Pagina 1: 50 produtos recebidos
+2026-03-12 16:16:31 [info] Total acumulado [beleza]: 50 produtos
+2026-03-12 16:16:32 [info] Pagina 2: 50 produtos recebidos
+2026-03-12 16:16:32 [info] Total acumulado [beleza]: 100 produtos
+2026-03-12 16:16:33 [info] Pagina 3: 50 produtos recebidos
+2026-03-12 16:16:33 [info] Total acumulado [beleza]: 150 produtos
+2026-03-12 16:16:34 [info] Pagina 1: 50 produtos recebidos
+2026-03-12 16:16:34 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-12 16:16:36 [info] Pagina 2: 50 produtos recebidos
+2026-03-12 16:16:36 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-12 16:16:37 [info] Pagina 3: 50 produtos recebidos
+2026-03-12 16:16:37 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-12 16:16:39 [info] Pagina 1: 50 produtos recebidos
+2026-03-12 16:16:39 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-12 16:16:40 [info] Pagina 2: 50 produtos recebidos
+2026-03-12 16:16:40 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-12 16:16:41 [info] Pagina 3: 50 produtos recebidos
+2026-03-12 16:16:41 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-12 16:16:41 [info] Total unico: 450 produtos
+2026-03-12 16:16:41 [info] Motivos mais comuns: 43x desconto 0.0% < minimo 10% | 4x desconto 9.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 4x desconto 1.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5
+2026-03-12 16:16:41 [info] Filtro: 370/450 produtos aprovados
+2026-03-12 16:16:41 [info] Aprovados: 370 produtos
+2026-03-12 16:16:41 [info] Limite diario/janela atingido. Nenhum envio neste ciclo.
+2026-03-12 16:16:41 [info] Ciclos agendados a cada 60 minuto(s).
