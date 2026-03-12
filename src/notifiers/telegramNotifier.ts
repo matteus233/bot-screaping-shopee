@@ -1,11 +1,11 @@
 // src/notifiers/telegramNotifier.ts — Notificador + bot de comandos via Telegraf
 import { Telegraf, type Context } from "telegraf";
-import { config, filterConfig } from "../config.js";
-import { DatabaseManager } from "../database/dbManager.js";
-import { formatTelegram } from "../utils/formatter.js";
-import { logger } from "../utils/logger.js";
-import { SHOPEE_CATEGORIES } from "../types/index.js";
-import type { ShopeeProduct } from "../types/index.js";
+import { config, filterConfig } from "../config";
+import { DatabaseManager } from "../database/dbManager";
+import { formatTelegram } from "../utils/formatter";
+import { logger } from "../utils/logger";
+import { SHOPEE_CATEGORIES } from "../types/index";
+import type { ShopeeProduct } from "../types/index";
 
 export class TelegramNotifier {
   private readonly bot: Telegraf;

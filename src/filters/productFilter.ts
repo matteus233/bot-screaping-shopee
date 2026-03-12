@@ -1,8 +1,8 @@
 // src/filters/productFilter.ts — Motor de filtragem de produtos
-import { filterConfig } from "../config.js";
-import { logger } from "../utils/logger.js";
-import { DatabaseManager } from "../database/dbManager.js";
-import type { ShopeeProduct, FilterResult } from "../types/index.js";
+import { filterConfig } from "../config";
+import { logger } from "../utils/logger";
+import { DatabaseManager } from "../database/dbManager";
+import type { ShopeeProduct, FilterResult } from "../types/index";
 
 type Check = (product: ShopeeProduct) => FilterResult | Promise<FilterResult>;
 

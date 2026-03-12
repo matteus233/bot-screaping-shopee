@@ -1,7 +1,7 @@
 // src/utils/logger.ts — Logger centralizado com Winston
 import winston from "winston";
 import fs from "fs";
-import { config } from "../config.js";
+import { config } from "../config";
 
 const logDir = "./data";
 if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });

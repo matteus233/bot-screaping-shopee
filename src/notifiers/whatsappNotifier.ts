@@ -1,10 +1,10 @@
 // src/notifiers/whatsappNotifier.ts — Notificador WhatsApp via Twilio
 import twilio from "twilio";
-import { config } from "../config.js";
-import { DatabaseManager } from "../database/dbManager.js";
-import { formatWhatsApp } from "../utils/formatter.js";
-import { logger } from "../utils/logger.js";
-import type { ShopeeProduct } from "../types/index.js";
+import { config } from "../config";
+import { DatabaseManager } from "../database/dbManager";
+import { formatWhatsApp } from "../utils/formatter";
+import { logger } from "../utils/logger";
+import type { ShopeeProduct } from "../types/index";
 
 export class WhatsAppNotifier {
   private readonly client: ReturnType<typeof twilio> | null = null;

@@ -1,16 +1,16 @@
 // src/api/shopeeClient.ts — Cliente da API Shopee Affiliates
 import axios, { type AxiosInstance } from "axios";
 import crypto from "crypto";
-import { config } from "../config.js";
-import { rateLimiter } from "./rateLimiter.js";
-import { logger } from "../utils/logger.js";
+import { config } from "../config";
+import { rateLimiter } from "./rateLimiter";
+import { logger } from "../utils/logger";
 import type {
   ShopeeProduct,
   ShopeeApiResponse,
   ShopeeOffersData,
   CategoryKey,
-} from "../types/index.js";
-import { SHOPEE_CATEGORIES } from "../types/index.js";
+} from "../types/index";
+import { SHOPEE_CATEGORIES } from "../types/index";
 
 const MAX_RETRIES = 3;
 const RETRY_DELAY_MS = 2000;
@@ -61,10 +61,18 @@ export class ShopeeClient {
       await rateLimiter.acquire();
 
       try {
-        const { data } = await this.http.get<ShopeeApiResponse<T>>(endpoint, {
+        const response = await this.http.get<ShopeeApiResponse<T>>(endpoint, {
           headers: this.buildHeaders(),
           params,
         });
+        const { data, status } = response;
+
+        if (!data || typeof data.code !== "number") {
+          logger.warn(
+            `Resposta inesperada (${status}) em ${endpoint}: ${JSON.stringify(data)}`
+          );
+          return null;
+        }
 
         if (data.code !== 0) {
           logger.warn(`API erro ${data.code}: ${data.msg} (${endpoint})`);

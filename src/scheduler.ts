@@ -1,14 +1,14 @@
 // src/scheduler.ts — Orquestrador principal (node-cron)
 import cron from "node-cron";
-import { config, filterConfig } from "./config.js";
-import { ShopeeClient } from "./api/shopeeClient.js";
-import { ProductFilter } from "./filters/productFilter.js";
-import { DatabaseManager } from "./database/dbManager.js";
-import { TelegramNotifier } from "./notifiers/telegramNotifier.js";
-import { WhatsAppNotifier } from "./notifiers/whatsappNotifier.js";
-import { logger } from "./utils/logger.js";
-import { SHOPEE_CATEGORIES } from "./types/index.js";
-import type { CategoryKey, ShopeeProduct } from "./types/index.js";
+import { config, filterConfig } from "./config";
+import { ShopeeClient } from "./api/shopeeClient";
+import { ProductFilter } from "./filters/productFilter";
+import { DatabaseManager } from "./database/dbManager";
+import { TelegramNotifier } from "./notifiers/telegramNotifier";
+import { WhatsAppNotifier } from "./notifiers/whatsappNotifier";
+import { logger } from "./utils/logger";
+import { SHOPEE_CATEGORIES } from "./types/index";
+import type { CategoryKey, ShopeeProduct } from "./types/index";
 
 const SEND_DELAY_MS = 1500;   // pausa entre envios (anti-flood)
 
@@ -69,7 +69,7 @@ export class ShopeeBot {
       const valid = await this.filter.filterProducts(unique);
       logger.info(`Aprovados: ${valid.length} produtos`);
 
-      // Envia
+      // Envia (apenas canais habilitados)
       let sent = 0;
       for (const product of valid) {
         const originalUrl  = product.offerLink ?? product.itemUrl ?? "";
@@ -79,8 +79,13 @@ export class ShopeeBot {
 
         product._affiliateUrl = affiliateUrl;
 
-        const tg = await this.telegram.sendProduct(product, affiliateUrl);
-        const wa = await this.whatsapp.sendProduct(product, affiliateUrl);
+        const tg = config.telegram.enabled
+          ? await this.telegram.sendProduct(product, affiliateUrl)
+          : false;
+
+        const wa = config.whatsapp.enabled
+          ? await this.whatsapp.sendProduct(product, affiliateUrl)
+          : false;
 
         if (tg || wa) {
           sent++;

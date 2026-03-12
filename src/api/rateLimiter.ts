@@ -1,6 +1,6 @@
 // src/api/rateLimiter.ts — Token Bucket (60 req/min)
-import { config } from "../config.js";
-import { logger } from "../utils/logger.js";
+import { config } from "../config";
+import { logger } from "../utils/logger";
 
 export class TokenBucket {
   private readonly rate: number;       // tokens/ms

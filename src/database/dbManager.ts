@@ -1,13 +1,13 @@
 // src/database/dbManager.ts — Gerenciador PostgreSQL (pg Pool, totalmente assíncrono)
 import { Pool, type PoolClient } from "pg";
-import { config } from "../config.js";
-import { logger } from "../utils/logger.js";
-import type { NotificationChannel } from "../types/index.js";
+import { config } from "../config";
+import { logger } from "../utils/logger";
+import type { NotificationChannel } from "../types/index";
 
 export class DatabaseManager {
   private readonly pool: Pool;
 
-  constructor(connectionString = config.databasePath) {
+  constructor(connectionString = config.databaseUrl) {
     this.pool = new Pool({
       connectionString,
       max: 10,

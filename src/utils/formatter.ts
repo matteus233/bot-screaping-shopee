@@ -1,5 +1,5 @@
 // src/utils/formatter.ts — Formatador de mensagens
-import type { ShopeeProduct } from "../types/index.js";
+import type { ShopeeProduct } from "../types/index";
 
 function stars(rating: number): string {
   const full  = Math.floor(rating);

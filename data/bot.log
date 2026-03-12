@@ -1,0 +1,124 @@
+2026-03-12 13:15:32 [info] ═══════════════════════════════════
+2026-03-12 13:15:32 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:15:32 [info] ═══════════════════════════════════
+2026-03-12 13:15:32 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:15:32 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:15:34 [error] Error: getaddrinfo ENOTFOUND base
+    at E:\Dev\bot-screaping-shopee\node_modules\pg-pool\index.js:45:11
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at DatabaseManager.query (E:\Dev\bot-screaping-shopee\src\database\dbManager.ts:70:20)
+    at DatabaseManager.initialize (E:\Dev\bot-screaping-shopee\src\database\dbManager.ts:31:5)
+    at ShopeeBot.start (E:\Dev\bot-screaping-shopee\src\scheduler.ts:112:5)
+    at main (E:\Dev\bot-screaping-shopee\src\main.ts:27:3)
+2026-03-12 13:21:16 [info] ═══════════════════════════════════
+2026-03-12 13:21:16 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:21:16 [info] ═══════════════════════════════════
+2026-03-12 13:21:16 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:21:16 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:21:16 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:21:16 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:21:16 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:21:17 [warn] API erro undefined: undefined (/api/v2/affiliate/offer/list)
+2026-03-12 13:21:17 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:21:17 [info] Total único: 0 produtos
+2026-03-12 13:21:17 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:21:17 [info] Aprovados: 0 produtos
+2026-03-12 13:21:17 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:21:17 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:22:12 [info] ═══════════════════════════════════
+2026-03-12 13:22:12 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:22:12 [info] ═══════════════════════════════════
+2026-03-12 13:22:12 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:22:12 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:22:12 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:22:12 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:22:12 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:22:13 [warn] Resposta inesperada (200) em /api/v2/affiliate/offer/list: {"errors":[{"message":"error [10020]: Invalid Credential","extensions":{"code":10020,"message":"Invalid Credential"}}]}
+2026-03-12 13:22:13 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:22:13 [info] Total único: 0 produtos
+2026-03-12 13:22:13 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:22:13 [info] Aprovados: 0 produtos
+2026-03-12 13:22:13 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:22:13 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:22:28 [info] 🛑 Encerrando (SIGINT)...
+2026-03-12 13:25:41 [info] ═══════════════════════════════════
+2026-03-12 13:25:41 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:25:41 [info] ═══════════════════════════════════
+2026-03-12 13:25:41 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:25:41 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:25:41 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:25:41 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:25:41 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:25:42 [warn] Resposta inesperada (200) em /api/v2/affiliate/offer/list: {"errors":[{"message":"error [10020]: Invalid Credential","extensions":{"code":10020,"message":"Invalid Credential"}}]}
+2026-03-12 13:25:42 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:25:42 [info] Total único: 0 produtos
+2026-03-12 13:25:42 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:25:42 [info] Aprovados: 0 produtos
+2026-03-12 13:25:42 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:25:42 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:31:13 [info] ═══════════════════════════════════
+2026-03-12 13:31:13 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:31:13 [info] ═══════════════════════════════════
+2026-03-12 13:31:13 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:31:13 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:31:14 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:31:14 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:31:14 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:31:14 [warn] Resposta inesperada (200) em /api/v2/affiliate/offer/list: {"errors":[{"message":"error [10020]: Invalid Credential","extensions":{"code":10020,"message":"Invalid Credential"}}]}
+2026-03-12 13:31:14 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:31:14 [info] Total único: 0 produtos
+2026-03-12 13:31:14 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:31:14 [info] Aprovados: 0 produtos
+2026-03-12 13:31:14 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:31:14 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:31:15 [error] [Telegram] Falha ao iniciar polling: Error: 409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-03-12 13:31:29 [info] 🛑 Encerrando (SIGINT)...
+2026-03-12 13:33:24 [info] ═══════════════════════════════════
+2026-03-12 13:33:24 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:33:24 [info] ═══════════════════════════════════
+2026-03-12 13:33:24 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:33:24 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:33:24 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:33:24 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:33:24 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:33:25 [warn] Resposta inesperada (200) em /api/v2/affiliate/offer/list: {"errors":[{"message":"error [10020]: Invalid Credential","extensions":{"code":10020,"message":"Invalid Credential"}}]}
+2026-03-12 13:33:25 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:33:25 [info] Total único: 0 produtos
+2026-03-12 13:33:25 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:33:25 [info] Aprovados: 0 produtos
+2026-03-12 13:33:25 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:33:25 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:33:25 [error] [Telegram] Falha ao iniciar polling: Error: 409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-03-12 13:36:01 [info] 🛑 Encerrando (SIGINT)...
+2026-03-12 13:37:24 [info] ═══════════════════════════════════
+2026-03-12 13:37:24 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:37:24 [info] ═══════════════════════════════════
+2026-03-12 13:37:24 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:37:24 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:37:24 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:37:24 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:37:24 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:37:24 [warn] Resposta inesperada (200) em /api/v2/affiliate/offer/list: {"errors":[{"message":"error [10020]: Invalid Credential","extensions":{"code":10020,"message":"Invalid Credential"}}]}
+2026-03-12 13:37:24 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:37:24 [info] Total único: 0 produtos
+2026-03-12 13:37:24 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:37:24 [info] Aprovados: 0 produtos
+2026-03-12 13:37:24 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:37:24 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:39:43 [info] ═══════════════════════════════════
+2026-03-12 13:39:43 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-12 13:39:43 [info] ═══════════════════════════════════
+2026-03-12 13:39:43 [info] 📡 Canais ativos: Telegram
+2026-03-12 13:39:43 [info] 🚀 Shopee Promo Bot iniciando...
+2026-03-12 13:39:43 [info] ✅ Banco de dados (PostgreSQL) inicializado.
+2026-03-12 13:39:43 [info] [Telegram] Bot de comandos iniciado (polling).
+2026-03-12 13:39:43 [info] 🔄 Iniciando ciclo de promoções...
+2026-03-12 13:39:44 [warn] Resposta inesperada (200) em /api/v2/affiliate/offer/list: {"errors":[{"message":"error [10020]: Invalid Credential","extensions":{"code":10020,"message":"Invalid Credential"}}]}
+2026-03-12 13:39:44 [info] Página 1: 0 produtos recebidos
+2026-03-12 13:39:44 [info] Total único: 0 produtos
+2026-03-12 13:39:44 [info] Filtro: 0/0 produtos aprovados
+2026-03-12 13:39:44 [info] Aprovados: 0 produtos
+2026-03-12 13:39:44 [info] ✅ Ciclo concluído: 0 produtos enviados.
+2026-03-12 13:39:44 [info] ⏰ Ciclos agendados a cada 60 minuto(s).
+2026-03-12 13:39:44 [error] [Telegram] Falha ao iniciar polling: Error: 409: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-03-12 13:39:51 [info] 🛑 Encerrando (SIGINT)...

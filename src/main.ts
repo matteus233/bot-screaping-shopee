@@ -1,7 +1,7 @@
 // src/main.ts — Ponto de entrada
 import { config } from "./config";
-import { logger } from "./utils/logger.js";
-import { ShopeeBot } from "./scheduler.js";
+import { logger } from "./utils/logger";
+import { ShopeeBot } from "./scheduler";
 
 function validateChannels(): void {
   const active: string[] = [];

@@ -1,7 +1,7 @@
 // src/config.ts
 import "dotenv/config";
 import { z } from "zod";
-import type { BotConfig, FilterConfig } from "./types/index.js";
+import type { BotConfig, FilterConfig } from "./types/index";
 
 const EnvSchema = z.object({
   SHOPEE_APP_ID: z.string().min(1),
