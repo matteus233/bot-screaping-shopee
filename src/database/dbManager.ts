@@ -1,4 +1,4 @@
-// src/database/dbManager.ts — Gerenciador PostgreSQL (pg Pool, totalmente assíncrono)
+// src/database/dbManager.ts - Gerenciador PostgreSQL (pg Pool, totalmente assincrono)
 import { Pool, type PoolClient } from "pg";
 import { config } from "../config";
 import { logger } from "../utils/logger";
@@ -23,10 +23,9 @@ export class DatabaseManager {
     });
   }
 
-  // ──────────────────────────────────────────────
-  //  Inicialização — cria tabelas se não existirem
-  // ──────────────────────────────────────────────
-
+  // ----------------------------------------
+  //  Inicializacao - cria tabelas se nao existirem
+  // ----------------------------------------
   async initialize(): Promise<void> {
     await this.query(`
       CREATE TABLE IF NOT EXISTS price_history (
@@ -56,13 +55,12 @@ export class DatabaseManager {
       );
     `);
 
-    logger.info("✅ Banco de dados (PostgreSQL) inicializado.");
+    logger.info("Banco de dados (PostgreSQL) inicializado.");
   }
 
-  // ──────────────────────────────────────────────
+  // ----------------------------------------
   //  Helpers internos
-  // ──────────────────────────────────────────────
-
+  // ----------------------------------------
   private async query<T extends object = Record<string, unknown>>(
     sql: string,
     params: unknown[] = [],
@@ -76,7 +74,7 @@ export class DatabaseManager {
     }
   }
 
-  /** Executa múltiplas queries dentro de uma única transação. */
+  /** Executa multiplas queries dentro de uma unica transacao. */
   async withTransaction<T>(fn: (client: PoolClient) => Promise<T>): Promise<T> {
     const client = await this.pool.connect();
     try {
@@ -92,10 +90,9 @@ export class DatabaseManager {
     }
   }
 
-  // ──────────────────────────────────────────────
-  //  Histórico de preços
-  // ──────────────────────────────────────────────
-
+  // ----------------------------------------
+  //  Historico de precos
+  // ----------------------------------------
   async recordPrice(itemId: string, shopId: string, price: number): Promise<void> {
     await this.query(
       "INSERT INTO price_history (item_id, shop_id, price) VALUES ($1, $2, $3)",
@@ -138,10 +135,9 @@ export class DatabaseManager {
     return rows.map((r) => ({ date: r.date, price: parseFloat(r.price) }));
   }
 
-  // ──────────────────────────────────────────────
+  // ----------------------------------------
   //  Anti-spam (controle de envios)
-  // ──────────────────────────────────────────────
-
+  // ----------------------------------------
   async wasSent(
     itemId: string,
     shopId: string,
@@ -176,10 +172,52 @@ export class DatabaseManager {
     );
   }
 
-  // ──────────────────────────────────────────────
-  //  Configuração dinâmica do bot
-  // ──────────────────────────────────────────────
+  async reserveSend(
+    itemId: string,
+    shopId: string,
+    channel: NotificationChannel,
+  ): Promise<boolean> {
+    const rows = await this.query<{ id: string }>(
+      `INSERT INTO sent_products (item_id, shop_id, channel)
+       VALUES ($1, $2, $3)
+       ON CONFLICT ON CONSTRAINT uq_sent DO NOTHING
+       RETURNING id`,
+      [itemId, shopId, channel],
+    );
+    return rows.length > 0;
+  }
 
+  async unmarkAsSent(
+    itemId: string,
+    shopId: string,
+    channel: NotificationChannel,
+  ): Promise<void> {
+    await this.query(
+      `DELETE FROM sent_products
+       WHERE item_id = $1 AND shop_id = $2 AND channel = $3`,
+      [itemId, shopId, channel],
+    );
+  }
+
+  async countSentBetween(
+    channel: NotificationChannel,
+    start: Date,
+    end: Date,
+  ): Promise<number> {
+    const rows = await this.query<{ count: string }>(
+      `SELECT COUNT(*)::text AS count
+       FROM sent_products
+       WHERE channel = $1
+         AND sent_at >= $2
+         AND sent_at < $3`,
+      [channel, start.toISOString(), end.toISOString()],
+    );
+    return parseInt(rows[0]?.count ?? "0", 10);
+  }
+
+  // ----------------------------------------
+  //  Configuracao dinamica do bot
+  // ----------------------------------------
   async setConfig(key: string, value: string): Promise<void> {
     await this.query(
       `INSERT INTO bot_config (key, value, updated_at)
@@ -198,21 +236,8 @@ export class DatabaseManager {
     return rows[0]?.value ?? defaultValue;
   }
 
-  // ──────────────────────────────────────────────
-  //  Lifecycle
-  // ──────────────────────────────────────────────
-
   async close(): Promise<void> {
     await this.pool.end();
-    logger.info("Pool PostgreSQL encerrado.");
-  }
-
-  /** Retorna métricas do pool (útil para /status). */
-  poolStats(): { total: number; idle: number; waiting: number } {
-    return {
-      total:   this.pool.totalCount,
-      idle:    this.pool.idleCount,
-      waiting: this.pool.waitingCount,
-    };
   }
 }
+

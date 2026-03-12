@@ -1,9 +1,8 @@
-// src/types/index.ts — Todos os tipos do projeto
+// src/types/index.ts - Todos os tipos do projeto
 
-// ──────────────────────────────────────────────
+// ----------------------------------------
 //  API Shopee
-// ──────────────────────────────────────────────
-
+// ----------------------------------------
 export interface ShopeeProduct {
   itemId: string;
   shopId: string;
@@ -12,13 +11,13 @@ export interface ShopeeProduct {
   offerLink?: string;
   itemUrl?: string;
 
-  // Preços (em centavos ou float dependendo do endpoint)
+  // Precos (em centavos ou float dependendo do endpoint)
   priceMin: number;
   priceMax?: number;
   originalPrice: number;
 
   // Qualidade
-  itemRating: number;      // 0–5
+  itemRating: number;      // 0-5
   ratingCount?: number;
   rateStar?: number;
   sales: number;
@@ -44,10 +43,9 @@ export interface ShopeeOffersData {
   totalCount?: number;
 }
 
-// ──────────────────────────────────────────────
-//  Configuração / Filtros
-// ──────────────────────────────────────────────
-
+// ----------------------------------------
+//  Configuracao / Filtros
+// ----------------------------------------
 export interface FilterConfig {
   minDiscountPercent: number;
   maxPriceBRL: number;
@@ -86,16 +84,26 @@ export interface BotConfig {
     burstSize: number;
     fetchIntervalMinutes: number;
   };
+  marketing: {
+    maxPerDay: number;
+    maxPerCycle: number;
+    minDiscountToSend: number;
+    windowCaps: {
+      morning: number;
+      afternoon: number;
+      night: number;
+    };
+    categoryCaps: Record<string, number>;
+  };
   filter: FilterConfig;
   databasePath: string;       // SQLite path
   databaseUrl: string;        // PostgreSQL connection URL
   logLevel: string;
 }
 
-// ──────────────────────────────────────────────
+// ----------------------------------------
 //  Database
-// ──────────────────────────────────────────────
-
+// ----------------------------------------
 export interface PriceRecord {
   itemId: string;
   shopId: string;
@@ -112,19 +120,17 @@ export interface SentRecord {
 
 export type NotificationChannel = "telegram" | "whatsapp";
 
-// ──────────────────────────────────────────────
+// ----------------------------------------
 //  Filtro
-// ──────────────────────────────────────────────
-
+// ----------------------------------------
 export interface FilterResult {
   passed: boolean;
   reason: string;
 }
 
-// ──────────────────────────────────────────────
+// ----------------------------------------
 //  Shopee categories
-// ──────────────────────────────────────────────
-
+// ----------------------------------------
 export type CategoryKey =
   | "eletronicos"
   | "celulares"
@@ -144,20 +150,20 @@ export type CategoryKey =
   | "todas";
 
 export const SHOPEE_CATEGORIES: Record<CategoryKey, number | null> = {
-  eletronicos:     11036132,
-  celulares:       11044464,
-  computadores:    11036278,
-  moda_masculina:  11036132,
-  moda_feminina:   11036133,
-  casa_decoracao:  11036278,
-  beleza:          11036279,
-  esportes:        11036280,
-  brinquedos:      11036281,
-  automotivo:      11036282,
-  saude:           11036283,
-  livros:          11036284,
-  games:           11036285,
-  alimentos:       11036286,
-  pets:            11036287,
-  todas:           null,
-}
+  eletronicos: 11036132,
+  celulares: 11044464,
+  computadores: 11036278,
+  moda_masculina: 11036132,
+  moda_feminina: 11036133,
+  casa_decoracao: 11036278,
+  beleza: 11036279,
+  esportes: 11036280,
+  brinquedos: 11036281,
+  automotivo: 11036282,
+  saude: 11036283,
+  livros: 11036284,
+  games: 11036285,
+  alimentos: 11036286,
+  pets: 11036287,
+  todas: null,
+};

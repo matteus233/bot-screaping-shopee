@@ -25,9 +25,9 @@ const EnvSchema = z.object({
 const parsed = EnvSchema.safeParse(process.env);
 
 if (!parsed.success) {
-  console.error("Erro nas variáveis de ambiente:");
+  console.error("Erro nas variaveis de ambiente:");
   parsed.error.issues.forEach((i) =>
-    console.error(`• ${i.path.join(".")}: ${i.message}`)
+    console.error(`� ${i.path.join(".")}: ${i.message}`)
   );
   process.exit(1);
 }
@@ -35,17 +35,17 @@ if (!parsed.success) {
 const env = parsed.data;
 
 export const filterConfig: FilterConfig = {
-  minDiscountPercent: 20,
+  minDiscountPercent: 10,
   maxPriceBRL: 500,
   minPriceBRL: 5,
   minRating: 4,
-  minRatingCount: 50,
-  minSales: 100,
-  historicalPriceCheck: true,
+  minRatingCount: 5,
+  minSales: 10,
+  historicalPriceCheck: false,
   maxPriceVsHistorical: 1.05,
   keywordsWhitelist: [],
-  keywordsBlacklist: ["réplica", "replica", "falsificado", "imitação"],
-  allowedCategories: [],
+  keywordsBlacklist: ["replica", "falsificado", "imitacao"],
+  allowedCategories: ["beleza", "moda_feminina", "casa_decoracao"],
 };
 
 export const config: BotConfig = {
@@ -53,7 +53,7 @@ export const config: BotConfig = {
     appId: env.SHOPEE_APP_ID,
     secret: env.SHOPEE_SECRET,
     affiliateId: env.SHOPEE_AFFILIATE_ID,
-    baseUrl: "https://open-api.affiliate.shopee.com.br",
+    baseUrl: "https://open-api.affiliate.shopee.com.br/graphql",
   },
 
   telegram: {
@@ -76,10 +76,26 @@ export const config: BotConfig = {
     fetchIntervalMinutes: 60,
   },
 
+  marketing: {
+    maxPerDay: 30,
+    maxPerCycle: 2,
+    minDiscountToSend: 20,
+    windowCaps: {
+      morning: 8,
+      afternoon: 10,
+      night: 12,
+    },
+    categoryCaps: {
+      beleza: 0.4,
+      moda_feminina: 0.3,
+      casa_decoracao: 0.3,
+    },
+  },
+
   filter: filterConfig,
 
   databasePath: env.DATABASE_PATH,
-  databaseUrl: env.DATABASE_URL, // ← ADICIONAR ISSO
+  databaseUrl: env.DATABASE_URL,
 
   logLevel: env.LOG_LEVEL,
 };

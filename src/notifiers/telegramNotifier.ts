@@ -11,6 +11,8 @@ export class TelegramNotifier {
   private readonly bot: Telegraf;
   private readonly db: DatabaseManager;
   private readonly channelId: string;
+  private readonly lastForwardedByUser = new Map<number, { id: number; title?: string; type?: string; ts: number }>();
+  private lastPrivateUserId: number | null = null;
 
   constructor(db: DatabaseManager) {
     this.db        = db;
@@ -69,6 +71,43 @@ export class TelegramNotifier {
 
   private registerCommands(): void {
     const bot = this.bot;
+
+    bot.on("message", (ctx) => {
+      if (ctx.chat?.type === "private" && ctx.from?.id) {
+        this.lastPrivateUserId = ctx.from.id;
+      }
+    });
+
+    bot.on("message", (ctx) => {
+      const msg = ctx.message as
+        | (typeof ctx.message & { forward_from_chat?: { id: number; title?: string; type?: string } })
+        | undefined;
+      const fwd = msg?.forward_from_chat;
+      if (fwd?.id && ctx.from?.id) {
+        this.lastForwardedByUser.set(ctx.from.id, {
+          id: fwd.id,
+          title: fwd.title,
+          type: fwd.type,
+          ts: Date.now(),
+        });
+      }
+    });
+
+    bot.on("channel_post", (ctx) => {
+      const post = ctx.update.channel_post;
+      const chatId = post?.chat?.id;
+      const title = post?.chat?.title;
+      if (chatId) {
+        const text = `chatId do canal: ${chatId}${title ? ` (${title})` : ""}`;
+        if (this.lastPrivateUserId) {
+          this.bot.telegram.sendMessage(this.lastPrivateUserId, text).catch(() => {
+            logger.info(`[Telegram] ${text}`);
+          });
+        } else {
+          logger.info(`[Telegram] ${text}`);
+        }
+      }
+    });
 
     bot.command("start", (ctx) => {
       ctx.replyWithHTML(
@@ -149,6 +188,39 @@ export class TelegramNotifier {
           ctx.reply("Ação inválida: use add | remove | block");
       }
     });
+
+    bot.command("chatid", (ctx) => {
+      const msg = ctx.message as
+        | (typeof ctx.message & {
+            forward_from_chat?: { id: number; title?: string; type?: string };
+            reply_to_message?: { forward_from_chat?: { id: number; title?: string; type?: string } };
+          })
+        | undefined;
+
+      const forwarded = msg?.forward_from_chat ?? msg?.reply_to_message?.forward_from_chat;
+      if (forwarded?.id) {
+        const name = forwarded.title ? ` (${forwarded.title})` : "";
+        const type = forwarded.type ?? "unknown";
+        return void ctx.reply(`chatId: ${forwarded.id} | tipo: ${type}${name}`);
+      }
+
+      const cached = ctx.from?.id ? this.lastForwardedByUser.get(ctx.from.id) : undefined;
+      if (cached && Date.now() - cached.ts < 5 * 60 * 1000) {
+        const name = cached.title ? ` (${cached.title})` : "";
+        const type = cached.type ?? "unknown";
+        return void ctx.reply(`chatId: ${cached.id} | tipo: ${type}${name}`);
+      }
+
+      const chat = ctx.chat;
+      const chatId = chat?.id;
+      const type = chat?.type ?? "unknown";
+      const title = (chat && "title" in chat) ? (chat as { title?: string }).title : undefined;
+      const name = title ? ` (${title})` : "";
+      ctx.reply(
+        `chatId: ${chatId} | tipo: ${type}${name}\n` +
+        "Dica: para pegar o ID do canal, encaminhe uma mensagem do canal para o bot e rode /chatid."
+      );
+    });
   }
 
   private cmdStatus(ctx: Context): void {
@@ -180,3 +252,4 @@ export class TelegramNotifier {
     this.bot.stop();
   }
 }
+

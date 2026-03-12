@@ -1,8 +1,9 @@
-// src/filters/productFilter.ts — Motor de filtragem de produtos
+// src/filters/productFilter.ts - Motor de filtragem de produtos
 import { filterConfig } from "../config";
 import { logger } from "../utils/logger";
 import { DatabaseManager } from "../database/dbManager";
-import type { ShopeeProduct, FilterResult } from "../types/index";
+import type { ShopeeProduct, FilterResult, CategoryKey } from "../types/index";
+import { SHOPEE_CATEGORIES } from "../types/index";
 
 type Check = (product: ShopeeProduct) => FilterResult | Promise<FilterResult>;
 
@@ -13,10 +14,9 @@ export class ProductFilter {
     this.db = db;
   }
 
-  // ──────────────────────────────────────────────
-  //  API pública
-  // ──────────────────────────────────────────────
-
+  // ----------------------------------------
+  //  API publica
+  // ----------------------------------------
   async isValid(product: ShopeeProduct): Promise<FilterResult> {
     const checks: Check[] = [
       this.checkDiscount.bind(this),
@@ -46,34 +46,53 @@ export class ProductFilter {
       .map(({ product }) => product);
 
     const rejected = results.filter(({ result }) => !result.passed);
+    const reasonCount = new Map<string, number>();
     rejected.forEach(({ product, result }) => {
       logger.debug(`Rejeitado [${product.itemName?.slice(0, 40)}]: ${result.reason}`);
+      if (result.reason) {
+        reasonCount.set(result.reason, (reasonCount.get(result.reason) ?? 0) + 1);
+      }
     });
+
+    if (reasonCount.size > 0) {
+      const top = Array.from(reasonCount.entries())
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 5)
+        .map(([reason, count]) => `${count}x ${reason}`)
+        .join(" | ");
+      logger.info(`Motivos mais comuns: ${top}`);
+    }
 
     logger.info(`Filtro: ${valid.length}/${products.length} produtos aprovados`);
     return valid;
   }
 
-  // ──────────────────────────────────────────────
-  //  Verificações individuais
-  // ──────────────────────────────────────────────
+  // ----------------------------------------
+  //  Verificacoes individuais
+  // ----------------------------------------
 
   private checkDiscount(p: ShopeeProduct): FilterResult {
-    const original = p.originalPrice ?? 0;
-    const current  = p.priceMin ?? 0;
-    const cfg      = filterConfig;
+    const cfg = filterConfig;
+    const current = p.priceMin ?? 0;
 
-    if (original <= 0 || current <= 0) {
-      return { passed: false, reason: "preço inválido" };
+    let discountPct = p._discountPct;
+    if (discountPct === undefined) {
+      const original = p.originalPrice ?? 0;
+      if (original > 0 && current > 0) {
+        discountPct = ((original - current) / original) * 100;
+        p._discountPct = Math.round(discountPct * 10) / 10;
+      }
     }
 
-    const discountPct = ((original - current) / original) * 100;
-    p._discountPct = Math.round(discountPct * 10) / 10;
+    // Se nao ha informacao de desconto, nao bloqueia o produto
+    if (discountPct === undefined) {
+      return { passed: true, reason: "" };
+    }
 
     if (discountPct < cfg.minDiscountPercent) {
       return {
         passed: false,
-        reason: `desconto ${discountPct.toFixed(1)}% < mínimo ${cfg.minDiscountPercent}%`,
+        reason: `desconto ${discountPct.toFixed(1)}% < minimo ${cfg.minDiscountPercent}%`,
       };
     }
 
@@ -82,28 +101,33 @@ export class ProductFilter {
 
   private checkPrice(p: ShopeeProduct): FilterResult {
     const price = p.priceMin ?? 0;
-    const cfg   = filterConfig;
+    const cfg = filterConfig;
 
     if (price < cfg.minPriceBRL) {
-      return { passed: false, reason: `preço R$${price} abaixo do mínimo R$${cfg.minPriceBRL}` };
+      return { passed: false, reason: `preco R$${price} abaixo do minimo R$${cfg.minPriceBRL}` };
     }
     if (price > cfg.maxPriceBRL) {
-      return { passed: false, reason: `preço R$${price} acima do máximo R$${cfg.maxPriceBRL}` };
+      return { passed: false, reason: `preco R$${price} acima do maximo R$${cfg.maxPriceBRL}` };
     }
 
     return { passed: true, reason: "" };
   }
 
   private checkRating(p: ShopeeProduct): FilterResult {
-    const rating      = p.itemRating ?? 0;
+    const rating = p.itemRating ?? 0;
     const ratingCount = p.ratingCount ?? p.rateStar ?? 0;
-    const cfg         = filterConfig;
+    const cfg = filterConfig;
+
+    // Se a API nao trouxe rating, nao bloqueia
+    if (rating <= 0) return { passed: true, reason: "" };
 
     if (rating < cfg.minRating) {
-      return { passed: false, reason: `avaliação ${rating} < mínimo ${cfg.minRating}` };
+      return { passed: false, reason: `avaliacao ${rating} < minimo ${cfg.minRating}` };
     }
-    if (ratingCount < cfg.minRatingCount) {
-      return { passed: false, reason: `${ratingCount} avaliações < mínimo ${cfg.minRatingCount}` };
+
+    // Se a API nao trouxe contagem, nao bloqueia
+    if (ratingCount > 0 && ratingCount < cfg.minRatingCount) {
+      return { passed: false, reason: `${ratingCount} avaliacoes < minimo ${cfg.minRatingCount}` };
     }
 
     return { passed: true, reason: "" };
@@ -111,10 +135,13 @@ export class ProductFilter {
 
   private checkSales(p: ShopeeProduct): FilterResult {
     const sales = p.sales ?? 0;
-    const cfg   = filterConfig;
+    const cfg = filterConfig;
+
+    // Se nao ha dado de vendas, nao bloqueia
+    if (sales <= 0) return { passed: true, reason: "" };
 
     if (sales < cfg.minSales) {
-      return { passed: false, reason: `${sales} vendas < mínimo ${cfg.minSales}` };
+      return { passed: false, reason: `${sales} vendas < minimo ${cfg.minSales}` };
     }
 
     return { passed: true, reason: "" };
@@ -122,7 +149,7 @@ export class ProductFilter {
 
   private checkKeywords(p: ShopeeProduct): FilterResult {
     const name = (p.itemName ?? "").toLowerCase();
-    const cfg  = filterConfig;
+    const cfg = filterConfig;
 
     for (const kw of cfg.keywordsBlacklist) {
       if (name.includes(kw.toLowerCase())) {
@@ -145,34 +172,43 @@ export class ProductFilter {
     if (cfg.allowedCategories.length === 0) return { passed: true, reason: "" };
 
     const cat = String(p.catId ?? p.categoryId ?? "");
-    if (!cfg.allowedCategories.includes(cat)) {
-      return { passed: false, reason: `categoria ${cat} não permitida` };
+    const allowed = new Set<string>();
+    for (const entry of cfg.allowedCategories) {
+      allowed.add(entry);
+      if ((entry as CategoryKey) in SHOPEE_CATEGORIES) {
+        const id = SHOPEE_CATEGORIES[entry as CategoryKey];
+        if (id !== null && id !== undefined) allowed.add(String(id));
+      }
+    }
+
+    if (!allowed.has(cat)) {
+      return { passed: false, reason: `categoria ${cat} nao permitida` };
     }
 
     return { passed: true, reason: "" };
   }
 
   private async checkHistoricalPrice(p: ShopeeProduct): Promise<FilterResult> {
-    const cfg     = filterConfig;
+    const cfg = filterConfig;
     if (!cfg.historicalPriceCheck) return { passed: true, reason: "" };
 
-    const itemId  = String(p.itemId ?? "");
-    const shopId  = String(p.shopId ?? "");
+    const itemId = String(p.itemId ?? "");
+    const shopId = String(p.shopId ?? "");
     const current = p.priceMin ?? 0;
 
     if (!itemId || current <= 0) return { passed: true, reason: "" };
 
-    // Registra preço atual no histórico
+    // Registra preco atual no historico
     await this.db.recordPrice(itemId, shopId, current);
 
     const histMin = await this.db.getHistoricalMinPrice(itemId, shopId);
-    if (histMin === null) return { passed: true, reason: "" };  // primeiro registro
+    if (histMin === null) return { passed: true, reason: "" }; // primeiro registro
 
     const threshold = histMin * cfg.maxPriceVsHistorical;
     if (current > threshold) {
       return {
         passed: false,
-        reason: `preço atual R$${current.toFixed(2)} > ${(cfg.maxPriceVsHistorical * 100).toFixed(0)}% do mínimo histórico R$${histMin.toFixed(2)}`,
+        reason: `preco atual R$${current.toFixed(2)} > ${(cfg.maxPriceVsHistorical * 100).toFixed(0)}% do minimo historico R$${histMin.toFixed(2)}`,
       };
     }
 

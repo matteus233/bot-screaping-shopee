@@ -1,5 +1,6 @@
 // src/utils/formatter.ts — Formatador de mensagens
 import type { ShopeeProduct } from "../types/index";
+import { SHOPEE_CATEGORIES } from "../types/index";
 
 function stars(rating: number): string {
   const full  = Math.floor(rating);
@@ -18,6 +19,26 @@ function brl(value: number): string {
   return value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
+function categoryTag(product: ShopeeProduct): string | null {
+  const catId = String(product.catId ?? product.categoryId ?? "");
+  if (!catId) return null;
+
+  const map: Array<[keyof typeof SHOPEE_CATEGORIES, string]> = [
+    ["beleza", "BELEZA"],
+    ["moda_feminina", "MODA"],
+    ["casa_decoracao", "CASA"],
+  ];
+
+  for (const [key, label] of map) {
+    const id = SHOPEE_CATEGORIES[key];
+    if (id !== null && String(id) === catId) {
+      return `[${label}]`;
+    }
+  }
+
+  return null;
+}
+
 // ──────────────────────────────────────────────
 //  Telegram (HTML)
 // ──────────────────────────────────────────────
@@ -32,8 +53,11 @@ export function formatTelegram(product: ShopeeProduct, affiliateUrl?: string): s
   const url      = affiliateUrl ?? product.offerLink ?? product.itemUrl ?? "";
   const badge    = discountBadge(discount);
 
+  const tag = categoryTag(product);
+  const title = tag ? `${tag} ${escapeHtml(name)}` : escapeHtml(name);
+
   const lines: string[] = [
-    `${badge} <b>${escapeHtml(name)}</b>`,
+    `${badge} <b>${title}</b>`,
     "",
     `💰 <b>${brl(price)}</b>`,
   ];
@@ -70,8 +94,11 @@ export function formatWhatsApp(product: ShopeeProduct, affiliateUrl?: string): s
   const url      = affiliateUrl ?? product.offerLink ?? product.itemUrl ?? "";
   const badge    = discountBadge(discount);
 
+  const tag = categoryTag(product);
+  const title = tag ? `${tag} ${name}` : name;
+
   const lines: string[] = [
-    `${badge} *${name}*`,
+    `${badge} *${title}*`,
     "",
     `💰 *${brl(price)}*`,
   ];
