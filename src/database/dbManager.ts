@@ -271,6 +271,19 @@ export class DatabaseManager {
     return set;
   }
 
+  async cleanupSentOlderThan(days = 90): Promise<number> {
+    const rows = await this.query<{ count: string }>(
+      `WITH deleted AS (
+         DELETE FROM sent_products
+         WHERE sent_at < NOW() - ($1 || ' days')::INTERVAL
+         RETURNING 1
+       )
+       SELECT COUNT(*)::text AS count FROM deleted`,
+      [days],
+    );
+    return parseInt(rows[0]?.count ?? "0", 10);
+  }
+
   // ----------------------------------------
   //  Configuracao dinamica do bot
   // ----------------------------------------

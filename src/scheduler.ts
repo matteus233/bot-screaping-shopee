@@ -77,6 +77,12 @@ export class ShopeeBot {
     logger.info("Iniciando ciclo de promocoes...");
 
     try {
+      // Limpeza simples para manter o banco leve (mantem 90 dias)
+      const cleaned = await this.db.cleanupSentOlderThan(90);
+      if (cleaned > 0) {
+        logger.info(`Limpeza: removidos ${cleaned} envios antigos (>90 dias).`);
+      }
+
       const categories: CategoryKey[] = (
         filterConfig.allowedCategories.length > 0
           ? filterConfig.allowedCategories
