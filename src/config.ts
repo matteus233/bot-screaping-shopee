@@ -77,13 +77,13 @@ export const config: BotConfig = {
   },
 
   marketing: {
-    maxPerDay: 30,
-    maxPerCycle: 2,
+    maxPerDay: 250,
+    maxPerCycle: 12,
     minDiscountToSend: 20,
     windowCaps: {
-      morning: 8,
-      afternoon: 10,
-      night: 12,
+      morning: 70,
+      afternoon: 80,
+      night: 100,
     },
     categoryCaps: {
       beleza: 0.4,
@@ -99,3 +99,4 @@ export const config: BotConfig = {
 
   logLevel: env.LOG_LEVEL,
 };
+
