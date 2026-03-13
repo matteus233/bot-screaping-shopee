@@ -1927,3 +1927,24 @@
 2026-03-12 21:00:14 [info] Aprovados: 372 produtos
 2026-03-12 21:00:16 [info] Ciclo concluido: 0 produtos enviados.
 2026-03-12 21:08:43 [info] [Telegram] chatId do canal: -1003858701353 (Achadinha da Shopee)
+2026-03-12 22:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-12 22:00:03 [info] Pagina 1: 50 produtos recebidos
+2026-03-12 22:00:03 [info] Total acumulado [beleza]: 50 produtos
+2026-03-12 22:00:04 [info] Pagina 2: 50 produtos recebidos
+2026-03-12 22:00:04 [info] Total acumulado [beleza]: 100 produtos
+2026-03-12 22:00:05 [info] Pagina 3: 50 produtos recebidos
+2026-03-12 22:00:05 [info] Total acumulado [beleza]: 150 produtos
+2026-03-12 22:00:07 [warn] API erro 10000: System Error
+2026-03-12 22:00:07 [info] Pagina 1: 0 produtos recebidos
+2026-03-12 22:00:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-12 22:00:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-12 22:00:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-12 22:00:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-12 22:00:12 [info] Pagina 3: 50 produtos recebidos
+2026-03-12 22:00:12 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-12 22:00:12 [info] Total unico: 300 produtos
+2026-03-12 22:00:12 [info] Motivos mais comuns: 27x desconto 0.0% < minimo 10% | 4x desconto 9.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 2x desconto 8.0% < minimo 10% | 2x avaliacao 3.9 < minimo 4
+2026-03-12 22:00:12 [info] Filtro: 247/300 produtos aprovados
+2026-03-12 22:00:12 [info] Aprovados: 247 produtos
+2026-03-12 22:00:15 [info] [Telegram] ✅ Kit 2 / 1 / 4 Travesseiro Pluma de Ganso Descanso 
+2026-03-12 22:00:21 [info] Ciclo concluido: 1 produtos enviados.
