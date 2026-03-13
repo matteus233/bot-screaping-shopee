@@ -187,6 +187,44 @@ export class DatabaseManager {
     return rows.length > 0;
   }
 
+  async reserveSendWithCooldown(
+    itemId: string,
+    shopId: string,
+    channel: NotificationChannel,
+    cooldownHours = 24,
+  ): Promise<boolean> {
+    return this.withTransaction(async (client) => {
+      const exists = await client.query<{ exists: boolean }>(
+        `SELECT EXISTS (
+           SELECT 1 FROM sent_products
+           WHERE item_id = $1
+             AND shop_id = $2
+             AND channel = $3
+             AND sent_at >= NOW() - ($4 || ' hours')::INTERVAL
+         ) AS exists`,
+        [itemId, shopId, channel, cooldownHours],
+      );
+
+      if (exists.rows[0]?.exists === true) return false;
+
+      // Allow re-send after cooldown by removing old record, then reserving
+      await client.query(
+        `DELETE FROM sent_products
+         WHERE item_id = $1 AND shop_id = $2 AND channel = $3`,
+        [itemId, shopId, channel],
+      );
+
+      const inserted = await client.query<{ id: string }>(
+        `INSERT INTO sent_products (item_id, shop_id, channel)
+         VALUES ($1, $2, $3)
+         RETURNING id`,
+        [itemId, shopId, channel],
+      );
+
+      return inserted.rows.length > 0;
+    });
+  }
+
   async unmarkAsSent(
     itemId: string,
     shopId: string,
@@ -213,6 +251,24 @@ export class DatabaseManager {
       [channel, start.toISOString(), end.toISOString()],
     );
     return parseInt(rows[0]?.count ?? "0", 10);
+  }
+
+  async getRecentSentKeys(
+    channel: NotificationChannel,
+    cooldownHours = 24,
+  ): Promise<Set<string>> {
+    const rows = await this.query<{ item_id: string; shop_id: string }>(
+      `SELECT item_id, shop_id
+       FROM sent_products
+       WHERE channel = $1
+         AND sent_at >= NOW() - ($2 || ' hours')::INTERVAL`,
+      [channel, cooldownHours],
+    );
+    const set = new Set<string>();
+    for (const r of rows) {
+      set.add(`${r.item_id}:${r.shop_id}`);
+    }
+    return set;
   }
 
   // ----------------------------------------

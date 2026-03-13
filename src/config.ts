@@ -73,18 +73,13 @@ export const config: BotConfig = {
   rateLimit: {
     requestsPerMinute: 60,
     burstSize: 10,
-    fetchIntervalMinutes: 60,
+    fetchIntervalMinutes: 20,
   },
 
   marketing: {
-    maxPerDay: 250,
-    maxPerCycle: 12,
-    minDiscountToSend: 20,
-    windowCaps: {
-      morning: 70,
-      afternoon: 80,
-      night: 100,
-    },
+    maxPerDay: 350,
+    maxPerCycle: 20,
+    minDiscountToSend: 10,
     categoryCaps: {
       beleza: 0.4,
       moda_feminina: 0.3,
@@ -99,4 +94,3 @@ export const config: BotConfig = {
 
   logLevel: env.LOG_LEVEL,
 };
-

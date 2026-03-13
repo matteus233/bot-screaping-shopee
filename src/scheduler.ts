@@ -16,36 +16,6 @@ function sleep(ms: number): Promise<void> {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-function getWindowKey(date: Date): "morning" | "afternoon" | "night" {
-  const h = date.getHours();
-  if (h >= 6 && h < 12) return "morning";
-  if (h >= 12 && h < 18) return "afternoon";
-  return "night";
-}
-
-function getWindowRange(date: Date): { start: Date; end: Date } {
-  const d = new Date(date);
-  const h = date.getHours();
-  let startHour = 6;
-  let endHour = 12;
-  if (h >= 12 && h < 18) {
-    startHour = 12;
-    endHour = 18;
-  } else if (h >= 18 || h < 6) {
-    startHour = 18;
-    endHour = 24;
-    if (h < 6) {
-      startHour = 0;
-      endHour = 6;
-    }
-  }
-  const start = new Date(d);
-  start.setHours(startHour, 0, 0, 0);
-  const end = new Date(d);
-  end.setHours(endHour, 0, 0, 0);
-  return { start, end };
-}
-
 function computeDiscountPct(p: ShopeeProduct): number | null {
   if (p._discountPct !== undefined) return p._discountPct;
   const original = p.originalPrice ?? 0;
@@ -62,6 +32,19 @@ function computeScore(p: ShopeeProduct): number {
   const priceScore = price > 0 ? Math.max(0, 30 - Math.log10(price) * 10) : 0;
   const salesScore = Math.log10(sales + 1) * 10;
   return discount * 2 + rating * 5 + salesScore + priceScore;
+}
+
+function getDailyRange(now: Date): { start: Date; end: Date } {
+  const start = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
+  const end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
+  return { start, end };
+}
+
+function getCyclesLeft(now: Date, intervalMinutes: number): number {
+  const end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
+  const diffMs = end.getTime() - now.getTime();
+  const minutesLeft = Math.max(0, Math.floor(diffMs / 60000));
+  return Math.max(1, Math.ceil(minutesLeft / intervalMinutes));
 }
 
 export class ShopeeBot {
@@ -112,36 +95,32 @@ export class ShopeeBot {
       const valid = await this.filter.filterProducts(unique);
       logger.info(`Aprovados: ${valid.length} produtos`);
 
-      // Marketing: limite diario e por janela
+      const recentSent = await this.db.getRecentSentKeys("telegram", 24);
+      const unsent = valid.filter(
+        (p) => !recentSent.has(`${p.itemId}:${p.shopId}`)
+      );
+      if (recentSent.size > 0) {
+        logger.info(`Ignorando ja enviados (24h): ${recentSent.size}`);
+      }
+      logger.info(`Disponiveis para selecao: ${unsent.length} produtos`);
+
       const now = new Date();
-      const windowKey = getWindowKey(now);
-      const windowRange = getWindowRange(now);
-
-      const sentToday = await this.db.countSentBetween(
-        "telegram",
-        new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0),
-        new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0)
-      );
-
-      const sentInWindow = await this.db.countSentBetween(
-        "telegram",
-        windowRange.start,
-        windowRange.end
-      );
-
+      const daily = getDailyRange(now);
+      const sentToday = await this.db.countSentBetween("telegram", daily.start, daily.end);
       const remainingDay = Math.max(0, config.marketing.maxPerDay - sentToday);
-      const windowCap = config.marketing.windowCaps[windowKey];
-      const remainingWindow = Math.max(0, windowCap - sentInWindow);
 
-      const cap = Math.min(config.marketing.maxPerCycle, remainingDay, remainingWindow);
-      if (cap <= 0) {
-        logger.info("Limite diario/janela atingido. Nenhum envio neste ciclo.");
+      if (remainingDay <= 0) {
+        logger.info("Limite diario atingido. Nenhum envio neste ciclo.");
         return;
       }
 
+      const cyclesLeft = getCyclesLeft(now, config.rateLimit.fetchIntervalMinutes);
+      const targetPerCycle = Math.max(1, Math.ceil(remainingDay / cyclesLeft));
+      const cap = Math.min(config.marketing.maxPerCycle, targetPerCycle, remainingDay);
+
       // Prioriza por score e exige desconto minimo real
       const byCategory = new Map<string, ShopeeProduct[]>();
-      for (const p of valid) {
+      for (const p of unsent) {
         const cat = String(p.catId ?? p.categoryId ?? "");
         if (!byCategory.has(cat)) byCategory.set(cat, []);
         byCategory.get(cat)?.push(p);
@@ -151,11 +130,23 @@ export class ShopeeBot {
       const categoryBuckets = new Map<string, ShopeeProduct[]>();
       for (const [catId, list] of byCategory.entries()) {
         const scored = list
-          .map((p) => ({ p, score: computeScore(p), discount: computeDiscountPct(p) ?? 0 }))
-          .filter((x) => x.discount >= config.marketing.minDiscountToSend)
+          .map((p) => ({ p, score: computeScore(p), discount: computeDiscountPct(p) }))
+          .filter((x) => x.discount === null || x.discount >= config.marketing.minDiscountToSend)
           .sort((a, b) => b.score - a.score)
           .map((x) => x.p);
         if (scored.length > 0) categoryBuckets.set(catId, scored);
+      }
+
+      const totalQualified = Array.from(categoryBuckets.values()).reduce(
+        (sum, arr) => sum + arr.length,
+        0
+      );
+      logger.info(`Qualificados para envio neste ciclo: ${totalQualified} | limite do ciclo: ${cap}`);
+      if (totalQualified === 0) {
+        logger.info(
+          `Nenhum produto com desconto >= ${config.marketing.minDiscountToSend}% para envio neste ciclo.`
+        );
+        return;
       }
 
       const quotas: Array<{ catId: string; limit: number }> = [];
@@ -166,7 +157,6 @@ export class ShopeeBot {
         quotas.push({ catId: String(id), limit });
       }
 
-      // Distribui cotas e preenche sobras
       const selected: ShopeeProduct[] = [];
       let remaining = cap;
 

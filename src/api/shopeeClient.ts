@@ -154,7 +154,11 @@ export class ShopeeClient {
     const items = nodes.map((n) => {
       const priceMin = Number(n.priceMin ?? 0);
       const priceMax = n.priceMax !== undefined ? Number(n.priceMax) : undefined;
-      const discountPct = n.priceDiscountRate !== undefined ? Number(n.priceDiscountRate) : undefined;
+      let discountPct = n.priceDiscountRate !== undefined ? Number(n.priceDiscountRate) : undefined;
+      if (discountPct !== undefined && discountPct > 0 && discountPct <= 1) {
+        // Some APIs return discount as fraction (e.g., 0.2 instead of 20)
+        discountPct = discountPct * 100;
+      }
       const originalPrice =
         discountPct !== undefined && discountPct > 0
           ? priceMin / (1 - discountPct / 100)
@@ -216,7 +220,10 @@ export class ShopeeClient {
 
     const priceMin = Number(node.priceMin ?? 0);
     const priceMax = node.priceMax !== undefined ? Number(node.priceMax) : undefined;
-    const discountPct = node.priceDiscountRate !== undefined ? Number(node.priceDiscountRate) : undefined;
+    let discountPct = node.priceDiscountRate !== undefined ? Number(node.priceDiscountRate) : undefined;
+    if (discountPct !== undefined && discountPct > 0 && discountPct <= 1) {
+      discountPct = discountPct * 100;
+    }
     const originalPrice =
       discountPct !== undefined && discountPct > 0
         ? priceMin / (1 - discountPct / 100)

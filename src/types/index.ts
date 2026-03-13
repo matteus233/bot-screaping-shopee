@@ -88,11 +88,6 @@ export interface BotConfig {
     maxPerDay: number;
     maxPerCycle: number;
     minDiscountToSend: number;
-    windowCaps: {
-      morning: number;
-      afternoon: number;
-      night: number;
-    };
     categoryCaps: Record<string, number>;
   };
   filter: FilterConfig;
