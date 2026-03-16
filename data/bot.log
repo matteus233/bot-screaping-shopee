@@ -6854,3 +6854,1208 @@
 2026-03-16 02:36:32 [info] Qualificados para envio neste ciclo: 328 | limite do ciclo: 6
 2026-03-16 02:36:38 [info] Ciclo concluido: 0 produtos enviados.
 2026-03-16 02:36:38 [info] Ciclos agendados a cada 20 minuto(s).
+2026-03-16 07:12:08 [info] ═══════════════════════════════════
+2026-03-16 07:12:08 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 07:12:08 [info] ═══════════════════════════════════
+2026-03-16 07:12:08 [info] 📡 Canais ativos: Telegram
+2026-03-16 07:12:08 [info] Shopee Promo Bot iniciando...
+2026-03-16 07:12:08 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 07:12:08 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 07:12:08 [info] Iniciando ciclo de promocoes...
+2026-03-16 07:12:09 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 07:12:10 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:12:10 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 07:12:11 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:12:11 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 07:12:12 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:12:12 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 07:12:14 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:12:14 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 07:12:14 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:12:14 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 07:12:15 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:12:15 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 07:12:17 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:12:17 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 07:12:18 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:12:18 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 07:12:19 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:12:19 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 07:12:19 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:19 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:19 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:19 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:20 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:20 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:20 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:20 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:20 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:20 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:21 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:21 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:22 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:23 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:12:23 [info] Total unico: 450 produtos
+2026-03-16 07:12:23 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 07:12:23 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 07:12:23 [info] Aprovados: 371 produtos
+2026-03-16 07:12:23 [info] Ignorando ja enviados (24h): 45
+2026-03-16 07:12:23 [info] Disponiveis para selecao: 326 produtos
+2026-03-16 07:12:23 [info] Qualificados para envio neste ciclo: 326 | limite do ciclo: 7
+2026-03-16 07:12:24 [info] [Telegram] OK Corretivo Líquido Cobertura Leve Melu by Ruby Rose
+2026-03-16 07:12:30 [info] [Telegram] OK KIT 24/48/72 Unhas C/Cola Postiça Decorada Glitter
+2026-03-16 07:12:36 [info] [Telegram] OK 100-300pcs Faixas De Cabelo Para Crianças Em Nylon
+2026-03-16 07:12:42 [info] [Telegram] OK Kit 10 Shortinho Estilo Cueca Conforto Não Marca n
+2026-03-16 07:12:48 [info] [Telegram] OK 2.8 L Suqueira  Plastica com tampa para Geladeira 
+2026-03-16 07:12:54 [info] [Telegram] OK 5/10/20 Peças Pano Absorvente Anti Óleo Para Cozin
+2026-03-16 07:12:59 [info] [Telegram] OK Capa para Máquina de Lavar Impermeável Com Zíper T
+2026-03-16 07:13:04 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 07:13:04 [info] Ciclos agendados a cada 20 minuto(s).
+2026-03-16 07:20:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 07:20:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:20:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 07:20:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:20:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 07:20:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:20:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 07:20:04 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:20:04 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 07:20:05 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:20:05 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 07:20:06 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:20:06 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 07:20:07 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:20:07 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 07:20:09 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:20:09 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 07:20:10 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:20:10 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 07:20:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:20:14 [info] Total unico: 450 produtos
+2026-03-16 07:20:14 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 07:20:14 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 07:20:14 [info] Aprovados: 371 produtos
+2026-03-16 07:20:14 [info] Ignorando ja enviados (24h): 52
+2026-03-16 07:20:14 [info] Disponiveis para selecao: 319 produtos
+2026-03-16 07:20:14 [info] Qualificados para envio neste ciclo: 319 | limite do ciclo: 7
+2026-03-16 07:20:15 [info] [Telegram] OK Depilador elétrico com navalha dupla cuidado e del
+2026-03-16 07:20:21 [info] [Telegram] OK Kit Espátula Desencravador Slim Podologia - 3 Peça
+2026-03-16 07:20:27 [info] [Telegram] OK KITS Calcinha FIO DENTAL Lisa Sem Costura Não Marc
+2026-03-16 07:20:33 [info] [Telegram] OK Blusa Feminina Manga 3/4 Novas Cores Tecido Crepe 
+2026-03-16 07:20:39 [info] [Telegram] OK KIT Clips Fixador Organizador de Fios e Cabos Auto
+2026-03-16 07:20:44 [info] [Telegram] OK Kit Varão Completo 2,00 Metros de Cortina Resisten
+2026-03-16 07:20:50 [info] [Telegram] OK Cofre Desafio 10mil/5mil/1mil - Caixa Dinheiro De 
+2026-03-16 07:20:55 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 07:40:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 07:40:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:40:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 07:40:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:40:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 07:40:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:40:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 07:40:04 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:40:04 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 07:40:05 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:40:05 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 07:40:06 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:40:06 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 07:40:08 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:40:08 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 07:40:09 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:40:09 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 07:40:10 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:40:10 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 07:40:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:40:14 [info] Total unico: 450 produtos
+2026-03-16 07:40:14 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 07:40:14 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 07:40:14 [info] Aprovados: 371 produtos
+2026-03-16 07:40:14 [info] Ignorando ja enviados (24h): 59
+2026-03-16 07:40:14 [info] Disponiveis para selecao: 312 produtos
+2026-03-16 07:40:14 [info] Qualificados para envio neste ciclo: 312 | limite do ciclo: 7
+2026-03-16 07:40:16 [info] [Telegram] OK Máscara Para Cílios A Prova D’Água 2 em 1 4D Tango
+2026-03-16 07:40:22 [info] [Telegram] OK Fadvan 5D W Extensões De Cílios Em Forma De 0.07 C
+2026-03-16 07:40:28 [info] [Telegram] OK Blusa Feminina Novas Cores Modelo Social Manga 3/4
+2026-03-16 07:40:33 [info] [Telegram] OK Kit 10 Calcinhas Fio Dental Sem Costura Com Corte 
+2026-03-16 07:40:39 [info] [Telegram] OK Armário Carrinho Organizador Multiuso Com 4 Camada
+2026-03-16 07:40:45 [info] [Telegram] OK Kit Lencol Extra Macio 400 Fios Micropercal Com Po
+2026-03-16 07:40:51 [info] [Telegram] OK Lencol Queen Jogo De Cama Casal 400 Fios King Micr
+2026-03-16 07:40:56 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 07:42:17 [error] [Telegram] Erro no polling manual: FetchError: request to https://api.telegram.org/bot8754403280:[REDACTED]/getUpdates failed, reason: read ECONNRESET
+2026-03-16 07:57:13 [error] [Telegram] Erro no polling manual: FetchError: network timeout at: https://api.telegram.org/bot8754403280:[REDACTED]/getUpdates
+2026-03-16 07:57:14 [error] [Telegram] Erro no polling manual: FetchError: request to https://api.telegram.org/bot8754403280:[REDACTED]/getUpdates failed, reason: getaddrinfo ENOTFOUND api.telegram.org
+2026-03-16 07:57:15 [error] [Telegram] Erro no polling manual: FetchError: request to https://api.telegram.org/bot8754403280:[REDACTED]/getUpdates failed, reason: getaddrinfo ENOTFOUND api.telegram.org
+2026-03-16 07:58:25 [info] ═══════════════════════════════════
+2026-03-16 07:58:25 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 07:58:25 [info] ═══════════════════════════════════
+2026-03-16 07:58:25 [info] 📡 Canais ativos: Telegram
+2026-03-16 07:58:25 [info] Shopee Promo Bot iniciando...
+2026-03-16 07:58:25 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 07:58:25 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 07:58:25 [info] Iniciando ciclo de promocoes...
+2026-03-16 07:58:26 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 07:58:27 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:58:27 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 07:58:28 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:58:28 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 07:58:29 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:58:29 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 07:58:31 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:58:31 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 07:58:32 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:58:32 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 07:58:33 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:58:33 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 07:58:34 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 07:58:34 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 07:58:35 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 07:58:35 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 07:58:36 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 07:58:36 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 07:58:36 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:36 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:36 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:36 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:38 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:38 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:39 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:40 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 07:58:40 [info] Total unico: 450 produtos
+2026-03-16 07:58:40 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 07:58:40 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 07:58:40 [info] Aprovados: 371 produtos
+2026-03-16 07:58:40 [info] Ignorando ja enviados (24h): 66
+2026-03-16 07:58:40 [info] Disponiveis para selecao: 306 produtos
+2026-03-16 07:58:40 [info] Qualificados para envio neste ciclo: 306 | limite do ciclo: 7
+2026-03-16 07:58:42 [info] [Telegram] OK Retinol firmador realçador suave nutritivo levanta
+2026-03-16 07:58:47 [info] [Telegram] OK Kit Fran Lover Gloss Labial E Lapis Labial By Fran
+2026-03-16 07:58:53 [info] [Telegram] OK Blusa Feminina Detalhe em V Manga Dobrada Promoção
+2026-03-16 07:58:59 [info] [Telegram] OK Conjunto De Jóias Da Moda Acessórios Femininos Col
+2026-03-16 07:59:05 [info] [Telegram] OK Kit Com Até 12 Peças Cabeceira Modular + Painel Ri
+2026-03-16 07:59:11 [info] [Telegram] OK Kit Lencol Jogo De Cama Berço / Solteiro / Casal /
+2026-03-16 07:59:17 [info] [Telegram] OK Jogo de Lençol 400 Fios Micropercal Com Fronha em 
+2026-03-16 07:59:22 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 07:59:22 [info] Ciclos agendados a cada 20 minuto(s).
+2026-03-16 08:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 08:00:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:00:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 08:00:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:00:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 08:00:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:00:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 08:00:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:00:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 08:00:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:00:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 08:00:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:00:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 08:00:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:00:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 08:00:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:00:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 08:00:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:00:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 08:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:00:16 [info] Total unico: 450 produtos
+2026-03-16 08:00:16 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 08:00:16 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 08:00:16 [info] Aprovados: 371 produtos
+2026-03-16 08:00:16 [info] Ignorando ja enviados (24h): 73
+2026-03-16 08:00:16 [info] Disponiveis para selecao: 299 produtos
+2026-03-16 08:00:16 [info] Qualificados para envio neste ciclo: 299 | limite do ciclo: 7
+2026-03-16 08:00:17 [info] [Telegram] OK Escova Alisadora Bivolt 5 em 1 - Alisa, Hidrata, M
+2026-03-16 08:00:23 [info] [Telegram] OK Depilador Indolor Caneta Sobrancelha Removedor Ins
+2026-03-16 08:00:29 [info] [Telegram] OK Blusa Feminina Manga 3/4 Novas Cores Verão Em Teci
+2026-03-16 08:00:35 [info] [Telegram] OK Kit Legging Escolar Lisa Preta e Azul Marinho Femi
+2026-03-16 08:00:41 [info] [Telegram] OK Percarbonato de Sódio 100% Puro Limpeza Em Geral T
+2026-03-16 08:00:47 [info] [Telegram] OK Kit 10 ou 5 Marmita Potes 850ml Travas Laterais Re
+2026-03-16 08:00:52 [info] [Telegram] OK Jogo de Lençol 400 Fios Micropercal Com Fronha em 
+2026-03-16 08:00:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 08:20:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 08:20:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:20:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 08:20:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:20:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 08:20:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:20:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 08:20:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:20:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 08:20:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:20:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 08:20:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:20:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 08:20:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:20:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 08:20:09 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:20:09 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 08:20:10 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:20:10 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 08:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:20:15 [info] Total unico: 450 produtos
+2026-03-16 08:20:15 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 08:20:15 [info] Filtro: 372/450 produtos aprovados
+2026-03-16 08:20:15 [info] Aprovados: 372 produtos
+2026-03-16 08:20:15 [info] Ignorando ja enviados (24h): 80
+2026-03-16 08:20:15 [info] Disponiveis para selecao: 293 produtos
+2026-03-16 08:20:15 [info] Qualificados para envio neste ciclo: 293 | limite do ciclo: 7
+2026-03-16 08:20:16 [info] [Telegram] OK Kit De Extensão De Cílios Manjesen-Pacote Com 200 
+2026-03-16 08:20:23 [info] [Telegram] OK Lixador de Pé Elétrico - Esfoliador Tira Calos Ped
+2026-03-16 08:20:29 [info] [Telegram] OK Blusa Feminina Tecido Dunas Novas Cores Uniforme V
+2026-03-16 08:20:35 [info] [Telegram] OK KIT 10 Calcinhas Sem Costura Tanga Laser Não Marca
+2026-03-16 08:20:41 [info] [Telegram] OK KIT 12 Peças de Utensílios Para Cozinha em Silicon
+2026-03-16 08:20:47 [info] [Telegram] OK Kit Travesseiro Pluma de Ganso Confortavel e Macio
+2026-03-16 08:20:53 [info] [Telegram] OK Mangueira de Jardim Anti-Torção e Anti-Dobras de 5
+2026-03-16 08:20:58 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 08:40:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 08:40:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:40:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 08:40:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:40:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 08:40:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:40:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 08:40:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:40:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 08:40:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:40:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 08:40:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:40:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 08:40:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 08:40:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 08:40:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 08:40:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 08:40:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 08:40:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 08:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 08:40:15 [info] Total unico: 450 produtos
+2026-03-16 08:40:15 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 08:40:15 [info] Filtro: 372/450 produtos aprovados
+2026-03-16 08:40:15 [info] Aprovados: 372 produtos
+2026-03-16 08:40:15 [info] Ignorando ja enviados (24h): 87
+2026-03-16 08:40:15 [info] Disponiveis para selecao: 286 produtos
+2026-03-16 08:40:15 [info] Qualificados para envio neste ciclo: 286 | limite do ciclo: 7
+2026-03-16 08:40:16 [info] [Telegram] OK Kit Unha Pollygel Cabine SunMini Portatil Molde F1
+2026-03-16 08:40:22 [info] [Telegram] OK Stick concealer Flawless Hidratante Foundation Bas
+2026-03-16 08:40:28 [info] [Telegram] OK Kit Ate 24 Pes Meia Infantil Menino Feminino 75% A
+2026-03-16 08:40:34 [info] [Telegram] OK Blusa Feminina Moda Evangeliva Social Tendência De
+2026-03-16 08:40:40 [info] [Telegram] OK Papel De Parede Alumínio Adesivo Impermeável Prote
+2026-03-16 08:40:46 [info] [Telegram] OK Forro Antiderrapante Para ArmáRio, Gaveta, Geladei
+2026-03-16 08:40:52 [info] [Telegram] OK Saco Lixo Preto Resistente 100 Litros / 60L / 40L 
+2026-03-16 08:40:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 09:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 09:00:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:00:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 09:00:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:00:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 09:00:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:00:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 09:00:04 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:00:04 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 09:00:05 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:00:05 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 09:00:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:00:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 09:00:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:00:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 09:00:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:00:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 09:00:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:00:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 09:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:00:15 [info] Total unico: 450 produtos
+2026-03-16 09:00:15 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 09:00:15 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 09:00:15 [info] Aprovados: 373 produtos
+2026-03-16 09:00:15 [info] Ignorando ja enviados (24h): 94
+2026-03-16 09:00:15 [info] Disponiveis para selecao: 280 produtos
+2026-03-16 09:00:15 [info] Qualificados para envio neste ciclo: 280 | limite do ciclo: 7
+2026-03-16 09:00:17 [info] [Telegram] OK Caneta Depiladora Elétrica Indolor Aparador Remove
+2026-03-16 09:00:23 [info] [Telegram] OK KIT Depiladora Caneta Aparadora De Sobrancelha Ros
+2026-03-16 09:00:29 [info] [Telegram] OK Papete Sandália Menina Margarida Leve e Feminina B
+2026-03-16 09:00:35 [info] [Telegram] OK Casaco Teddy Infantil Menina Capuz Touca com Ziper
+2026-03-16 09:00:40 [info] [Telegram] OK 30 unidades cabide redondo resistente adulto
+2026-03-16 09:00:46 [info] [Telegram] OK Percarbonato Granulado Original + 100% Puro Oxigên
+2026-03-16 09:00:52 [info] [Telegram] OK Luminária Solar Parede 108 COB Carregar LED Luz Br
+2026-03-16 09:00:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 09:20:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 09:20:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:20:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 09:20:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:20:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 09:20:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:20:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 09:20:04 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:20:04 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 09:20:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:20:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 09:20:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:20:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 09:20:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:20:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 09:20:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:20:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 09:20:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:20:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 09:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:20:15 [info] Total unico: 450 produtos
+2026-03-16 09:20:15 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 09:20:15 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 09:20:15 [info] Aprovados: 373 produtos
+2026-03-16 09:20:15 [info] Ignorando ja enviados (24h): 101
+2026-03-16 09:20:15 [info] Disponiveis para selecao: 273 produtos
+2026-03-16 09:20:15 [info] Qualificados para envio neste ciclo: 273 | limite do ciclo: 7
+2026-03-16 09:20:17 [info] [Telegram] OK Mini Barbeador Elétrico Portátil À Prova D'água De
+2026-03-16 09:20:23 [info] [Telegram] OK Kit Cronograma Capilar Completo Karseell – 3 Másca
+2026-03-16 09:20:28 [info] [Telegram] OK Kit 4 Calcinhas Cinta Modeladora Suplex Plus Size 
+2026-03-16 09:20:34 [info] [Telegram] OK Cachecol Tipo Pashimina Echarpe Lenço Liso Inverno
+2026-03-16 09:20:40 [info] [Telegram] OK Kit 1/2/4 Prateleiras para Banheiro com Suporte e 
+2026-03-16 09:20:46 [info] [Telegram] OK Escova 3 Em 1 Vassoura Rodo Gap Limpeza Esfregão M
+2026-03-16 09:20:52 [info] [Telegram] OK Porta Sacola Cinza Dispenser de Parede Puxa Saco E
+2026-03-16 09:20:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 09:40:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 09:40:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:40:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 09:40:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:40:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 09:40:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:40:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 09:40:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:40:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 09:40:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:40:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 09:40:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:40:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 09:40:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 09:40:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 09:40:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 09:40:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 09:40:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 09:40:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 09:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 09:40:15 [info] Total unico: 450 produtos
+2026-03-16 09:40:15 [info] Motivos mais comuns: 50x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 09:40:15 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 09:40:15 [info] Aprovados: 373 produtos
+2026-03-16 09:40:15 [info] Ignorando ja enviados (24h): 108
+2026-03-16 09:40:15 [info] Disponiveis para selecao: 266 produtos
+2026-03-16 09:40:15 [info] Qualificados para envio neste ciclo: 266 | limite do ciclo: 7
+2026-03-16 09:40:17 [info] [Telegram] OK Depiladora Caneta Aparadora De Sobrancelha Rosto P
+2026-03-16 09:40:23 [info] [Telegram] OK Removedor De Cutículas E Lixa Eletrônica Portátil 
+2026-03-16 09:40:29 [info] [Telegram] OK KIT 10 Calcinhas Sem Costura Tanga Laser Não Marca
+2026-03-16 09:40:34 [info] [Telegram] OK Kit 3 Tops Tube Feminino Canelado Versátil Moderno
+2026-03-16 09:40:40 [info] [Telegram] OK Garrafa 800ml/1000ml Inox Térmica Com Infusor Prat
+2026-03-16 09:40:46 [info] [Telegram] OK 40 Peças / 46 Peças Jogo De Chave Catraca Caixa De
+2026-03-16 09:40:52 [info] [Telegram] OK Mop Giratório Cabo Grande de 120 cm 8 Litros Cesto
+2026-03-16 09:40:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 10:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 10:00:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:00:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 10:00:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:00:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 10:00:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:00:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 10:00:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:00:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 10:00:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:00:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 10:00:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:00:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 10:00:11 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:00:11 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 10:00:12 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:00:12 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 10:00:13 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:00:13 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 10:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:00:17 [info] Total unico: 450 produtos
+2026-03-16 10:00:17 [info] Motivos mais comuns: 49x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 10:00:17 [info] Filtro: 374/450 produtos aprovados
+2026-03-16 10:00:17 [info] Aprovados: 374 produtos
+2026-03-16 10:00:17 [info] Ignorando ja enviados (24h): 115
+2026-03-16 10:00:17 [info] Disponiveis para selecao: 262 produtos
+2026-03-16 10:00:17 [info] Qualificados para envio neste ciclo: 262 | limite do ciclo: 7
+2026-03-16 10:00:19 [info] [Telegram] OK Wella Pro Oil Reflections Óleo 100ml
+2026-03-16 10:00:25 [info] [Telegram] OK Base Matte Alta Cobertura Payott 30ml - Escolha Se
+2026-03-16 10:00:31 [info] [Telegram] OK Kit 3 Cinto Feminino Couro Elegante com Fivela Dou
+2026-03-16 10:00:37 [info] [Telegram] OK Conjunto De Relógio Feminino Ros ivga 6 Peças De P
+2026-03-16 10:00:43 [info] [Telegram] OK Kit Lencol Extra Macio 400 Fios Micropercal Com Po
+2026-03-16 10:00:49 [info] [Telegram] OK Kit 1 A 3 Espremedores de Alho Manual Inox Amassad
+2026-03-16 10:00:54 [info] [Telegram] OK Kit1/3/4 Prateleiras Suporte Com Alto Adesivos Par
+2026-03-16 10:00:59 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 10:20:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 10:20:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:20:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 10:20:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:20:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 10:20:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:20:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 10:20:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:20:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 10:20:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:20:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 10:20:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:20:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 10:20:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:20:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 10:20:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:20:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 10:20:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:20:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 10:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:20:15 [info] Total unico: 450 produtos
+2026-03-16 10:20:15 [info] Motivos mais comuns: 49x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 10:20:15 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 10:20:15 [info] Aprovados: 373 produtos
+2026-03-16 10:20:15 [info] Ignorando ja enviados (24h): 122
+2026-03-16 10:20:15 [info] Disponiveis para selecao: 255 produtos
+2026-03-16 10:20:15 [info] Qualificados para envio neste ciclo: 255 | limite do ciclo: 7
+2026-03-16 10:20:17 [info] [Telegram] OK Escova De Alisamento Capilar Alisador De Cabelo Aq
+2026-03-16 10:20:23 [info] [Telegram] OK Conjunto De Cílios Postiços De Cluster Único De 20
+2026-03-16 10:20:29 [info] [Telegram] OK Kit 4 Bermuda Short Plus Size Anagua Feminino Segu
+2026-03-16 10:20:35 [info] [Telegram] OK Corrente Masculina e Feminina Aço Inoxidável 316L 
+2026-03-16 10:20:41 [info] [Telegram] OK Porta Ovos 4 Andares Rolante em Plástico para Gela
+2026-03-16 10:20:47 [info] [Telegram] OK Fita Dupla Face Extra Forte Transparente NanoGel S
+2026-03-16 10:20:53 [info] [Telegram] OK Lencol Micropercal 400 Fios Jogo De Cama Casal, Qu
+2026-03-16 10:20:58 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 10:40:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 10:40:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:40:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 10:40:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:40:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 10:40:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:40:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 10:40:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:40:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 10:40:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:40:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 10:40:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:40:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 10:40:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 10:40:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 10:40:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 10:40:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 10:40:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 10:40:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 10:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 10:40:15 [info] Total unico: 450 produtos
+2026-03-16 10:40:15 [info] Motivos mais comuns: 49x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 10:40:15 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 10:40:15 [info] Aprovados: 373 produtos
+2026-03-16 10:40:15 [info] Ignorando ja enviados (24h): 129
+2026-03-16 10:40:15 [info] Disponiveis para selecao: 248 produtos
+2026-03-16 10:40:15 [info] Qualificados para envio neste ciclo: 248 | limite do ciclo: 7
+2026-03-16 10:40:17 [info] [Telegram] OK Creme Removedor de Manchas Tira Manchas Ação Antie
+2026-03-16 10:40:23 [info] [Telegram] OK Escova Onda Finalizadora Beauty Flash Definição de
+2026-03-16 10:40:29 [info] [Telegram] OK 1000/2000 Peças Bolsa Elástico Scrunchies De Cabel
+2026-03-16 10:40:35 [info] [Telegram] OK Kit 2 Regata Feminina Blusinha Decote Suplex Básic
+2026-03-16 10:40:41 [info] [Telegram] OK Kit Jogo de Lençol Cama Box Micropercal 400 fios T
+2026-03-16 10:40:46 [info] [Telegram] OK Pistola De Cola Quente Bivolt 10w + 10, 20 ou 30 B
+2026-03-16 10:40:52 [info] [Telegram] OK Sapateira 4 ou 5 Andares Multiuso Desmontável Orga
+2026-03-16 10:40:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 11:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 11:00:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:00:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 11:00:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:00:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 11:00:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:00:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 11:00:05 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:00:05 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 11:00:06 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:00:06 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 11:00:08 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:00:08 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 11:00:11 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:00:11 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 11:00:12 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:00:12 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 11:00:13 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:00:13 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 11:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:18 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:00:18 [info] Total unico: 450 produtos
+2026-03-16 11:00:18 [info] Motivos mais comuns: 49x desconto 0.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10% | 2x desconto 5.0% < minimo 10%
+2026-03-16 11:00:18 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 11:00:18 [info] Aprovados: 373 produtos
+2026-03-16 11:00:18 [info] Ignorando ja enviados (24h): 136
+2026-03-16 11:00:18 [info] Disponiveis para selecao: 241 produtos
+2026-03-16 11:00:18 [info] Qualificados para envio neste ciclo: 241 | limite do ciclo: 7
+2026-03-16 11:00:19 [info] [Telegram] OK Maquina De Barbear e Aparador Pelos Elétrico 3 Em 
+2026-03-16 11:00:25 [info] [Telegram] OK Novo Óleo De Essência Para Os Olhos De Luteína , D
+2026-03-16 11:00:31 [info] [Telegram] OK KIT 3, 6 e 9 Calcinha Feminina Tanga Infantil Juve
+2026-03-16 11:00:37 [info] [Telegram] OK Kit 10 Calcinhas Fio Dental Sem Costura Com Corte 
+2026-03-16 11:00:43 [info] [Telegram] OK 1/2/3/4 Suporte Organizador De Metal Rack De Pared
+2026-03-16 11:00:49 [info] [Telegram] OK Kit Panos De Limpeza Aço Malha Arear Panela Fogão 
+2026-03-16 11:00:55 [info] [Telegram] OK Cobertor Manta Infantil Casal 2,00x1,80Mt Brilha n
+2026-03-16 11:01:00 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 11:20:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 11:20:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:20:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 11:20:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:20:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 11:20:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:20:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 11:20:04 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:20:04 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 11:20:05 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:20:05 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 11:20:07 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:20:07 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 11:20:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:20:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 11:20:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:20:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 11:20:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:20:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 11:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:20:15 [info] Total unico: 450 produtos
+2026-03-16 11:20:15 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 11:20:15 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 11:20:15 [info] Aprovados: 373 produtos
+2026-03-16 11:20:15 [info] Ignorando ja enviados (24h): 143
+2026-03-16 11:20:15 [info] Disponiveis para selecao: 234 produtos
+2026-03-16 11:20:15 [info] Qualificados para envio neste ciclo: 234 | limite do ciclo: 7
+2026-03-16 11:20:17 [info] [Telegram] OK Lápis Delineador Carbon Black HB050 À prova d’agua
+2026-03-16 11:20:23 [info] [Telegram] OK Tira Cravo Aparelho De Sucção De Cravos Pele Limpa
+2026-03-16 11:20:28 [info] [Telegram] OK Kit 3 Blusas Feminina Manga Curta Decote Quadrado 
+2026-03-16 11:20:34 [info] [Telegram] OK Kit Sortido Bermuda Ciclista Escolar Menina/Femini
+2026-03-16 11:20:40 [info] [Telegram] OK Porta Sabonete Saboneteira Dupla Com Adesivo Para 
+2026-03-16 11:20:46 [info] [Telegram] OK Porta Escova Dentes Com Esterilizador Uv Aplicador
+2026-03-16 11:20:52 [info] [Telegram] OK Protetor de Colchão Impermeável Matelado Varias Co
+2026-03-16 11:20:57 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 11:40:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 11:40:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:40:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 11:40:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:40:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 11:40:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:40:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 11:40:07 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:40:07 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 11:40:08 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:40:08 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 11:40:09 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:40:09 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 11:40:11 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 11:40:11 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 11:40:12 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 11:40:12 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 11:40:13 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 11:40:13 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 11:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 11:40:17 [info] Total unico: 450 produtos
+2026-03-16 11:40:17 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 3x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 11:40:17 [info] Filtro: 373/450 produtos aprovados
+2026-03-16 11:40:17 [info] Aprovados: 373 produtos
+2026-03-16 11:40:17 [info] Ignorando ja enviados (24h): 150
+2026-03-16 11:40:17 [info] Disponiveis para selecao: 227 produtos
+2026-03-16 11:40:17 [info] Qualificados para envio neste ciclo: 227 | limite do ciclo: 7
+2026-03-16 11:40:19 [info] [Telegram] OK ANA 1108  Grande Alicate cortador de unhas Aço
+2026-03-16 11:40:25 [info] [Telegram] OK Cabine Led/uv Sun 5 Digital 48w Bivolt Sun Unhas G
+2026-03-16 11:40:31 [info] [Telegram] OK kit 3 Blusas Feminina Baby Look Manga Curta Gola Q
+2026-03-16 11:40:37 [info] [Telegram] OK Blusa academia dia a dia básica suplex manguinha
+2026-03-16 11:40:42 [info] [Telegram] OK Tampas De Plástico Descartável Com 100 Peças Para 
+2026-03-16 11:40:48 [info] [Telegram] OK Caixa Saco Organizador Cobertor Casaco Guarda Roup
+2026-03-16 11:40:54 [info] [Telegram] OK Kit 5/10 PÇS Gancho de Parede Adesivo Multiuso Par
+2026-03-16 11:40:59 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 12:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 12:00:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:00:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 12:00:04 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:00:04 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 12:00:05 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:00:05 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 12:00:07 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:00:07 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 12:00:09 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:00:09 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 12:00:10 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:00:10 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 12:00:12 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:00:12 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 12:00:13 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:00:13 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 12:00:14 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:00:14 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 12:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:18 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:00:18 [info] Total unico: 450 produtos
+2026-03-16 12:00:18 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 12:00:18 [info] Filtro: 372/450 produtos aprovados
+2026-03-16 12:00:18 [info] Aprovados: 372 produtos
+2026-03-16 12:00:18 [info] Ignorando ja enviados (24h): 157
+2026-03-16 12:00:18 [info] Disponiveis para selecao: 219 produtos
+2026-03-16 12:00:18 [info] Qualificados para envio neste ciclo: 219 | limite do ciclo: 7
+2026-03-16 12:00:20 [info] [Telegram] OK Aplicafácil frasco aplicador de química tintura cr
+2026-03-16 12:00:26 [info] [Telegram] OK Touca/Gorro de Dormir de Cetim com Aba Faixa Larga
+2026-03-16 12:00:32 [info] [Telegram] OK Rasteirinha Feminina Rasteira Fivela Strass Modern
+2026-03-16 12:00:38 [info] [Telegram] OK Kit 1/2/3 Piranha Garra Cabelo Presilha Grande Pre
+2026-03-16 12:00:44 [info] [Telegram] OK Varal De Chão Roupa Calcinha Prateleiras 3 Andares
+2026-03-16 12:00:50 [info] [Telegram] OK Kit 6/12/18/24 Panos De Limpeza Aço Premium Arear 
+2026-03-16 12:00:55 [info] [Telegram] OK Capa Para Colchão Impermeavel Matelado Com Elastic
+2026-03-16 12:01:00 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 12:20:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 12:20:03 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:20:03 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 12:20:04 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:20:04 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 12:20:05 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:20:05 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 12:20:07 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:20:07 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 12:20:08 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:20:08 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 12:20:09 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:20:09 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 12:20:11 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:20:11 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 12:20:12 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:20:12 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 12:20:13 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:20:13 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 12:20:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:18 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:20:18 [info] Total unico: 450 produtos
+2026-03-16 12:20:18 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 12:20:18 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 12:20:18 [info] Aprovados: 371 produtos
+2026-03-16 12:20:18 [info] Ignorando ja enviados (24h): 164
+2026-03-16 12:20:18 [info] Disponiveis para selecao: 211 produtos
+2026-03-16 12:20:18 [info] Qualificados para envio neste ciclo: 211 | limite do ciclo: 7
+2026-03-16 12:20:19 [info] [Telegram] OK Extensões De Cílios D-Curl 640 Unidades : 9-18 Mm 
+2026-03-16 12:20:25 [info] [Telegram] OK Removedor De Cutículas E Lixa Eletrônica Portátil 
+2026-03-16 12:20:31 [info] [Telegram] OK Vestido longo casual basico feminino ribana canela
+2026-03-16 12:20:37 [info] [Telegram] OK Vestido Longo Muscletee Feminino Casual Ombreira t
+2026-03-16 12:20:43 [info] [Telegram] OK KIT 1/2/5 Suporte De Parede Multifuncional Caixa D
+2026-03-16 12:20:49 [info] [Telegram] OK Profissional Multiuso Cozinha Slicer Aço Inox 15 e
+2026-03-16 12:20:55 [info] [Telegram] OK Kit 1/2 Fita Dupla Face 1/3/5/10 Metro Extra Forte
+2026-03-16 12:21:00 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 12:40:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 12:40:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:40:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 12:40:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:40:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 12:40:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:40:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 12:40:06 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:40:06 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 12:40:07 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:40:07 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 12:40:08 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:40:08 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 12:40:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 12:40:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 12:40:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 12:40:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 12:40:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 12:40:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 12:40:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 12:40:16 [info] Total unico: 450 produtos
+2026-03-16 12:40:16 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 12:40:16 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 12:40:16 [info] Aprovados: 371 produtos
+2026-03-16 12:40:16 [info] Ignorando ja enviados (24h): 171
+2026-03-16 12:40:16 [info] Disponiveis para selecao: 204 produtos
+2026-03-16 12:40:16 [info] Qualificados para envio neste ciclo: 204 | limite do ciclo: 7
+2026-03-16 12:40:17 [info] [Telegram] OK 2 Pcs Meias De Silicone Para O Cuidado Dos Pés Gel
+2026-03-16 12:40:23 [info] [Telegram] OK Kit 30/60/90/120 Máscara Desidratada Comprimido Co
+2026-03-16 12:40:29 [info] [Telegram] OK Relógio Feminino Mini Digital Retrô Moda Vintagem
+2026-03-16 12:40:35 [info] [Telegram] OK Rasteirinha Papete Feminina com Brilho Nó Estiliza
+2026-03-16 12:40:41 [info] [Telegram] OK Kit 46 Chave Catraca Jogo De Soquetes Allen Torx F
+2026-03-16 12:40:47 [info] [Telegram] OK Kit Jogo De Lençol Cama Box Solteiro Casal Queen K
+2026-03-16 12:40:53 [info] [Telegram] OK Kit Lencol Jogo de Cama Berço Solteiro Casal Queen
+2026-03-16 12:40:58 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 12:42:33 [info] [Telegram] Poll updates: 1 (offset 0)
+2026-03-16 12:42:33 [info] [Telegram] Mensagem recebida: private | /start
+2026-03-16 12:42:55 [info] [Telegram] Poll updates: 1 (offset 765419085)
+2026-03-16 12:42:55 [info] [Telegram] Mensagem recebida: private | /alert
+2026-03-16 13:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:00:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:00:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 13:00:05 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:00:05 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 13:00:06 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:00:06 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 13:00:08 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:00:08 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 13:00:09 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:00:09 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 13:00:10 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:00:10 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 13:00:11 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:00:11 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 13:00:13 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:00:13 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 13:00:13 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:00:13 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 13:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:18 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:00:18 [info] Total unico: 450 produtos
+2026-03-16 13:00:18 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 13:00:18 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 13:00:18 [info] Aprovados: 371 produtos
+2026-03-16 13:00:18 [info] Ignorando ja enviados (24h): 178
+2026-03-16 13:00:18 [info] Disponiveis para selecao: 197 produtos
+2026-03-16 13:00:18 [info] Qualificados para envio neste ciclo: 197 | limite do ciclo: 7
+2026-03-16 13:00:20 [info] [Telegram] OK Brow Rise Gel Para Sobrancelhas By Ruby Rose Linha
+2026-03-16 13:00:25 [info] [Telegram] OK Bastão De Tintura Rápida Para Cobertura De Cabelo 
+2026-03-16 13:00:31 [info] [Telegram] OK kit 3 Blusas Feminina Baby Look Manga Curta Gola Q
+2026-03-16 13:00:38 [info] [Telegram] OK Não Perca Chinelo Feminino 33 ao 40 Confortável Es
+2026-03-16 13:00:44 [info] [Telegram] OK Novo Kit Com 100 até 300 Tampas De Plástico descar
+2026-03-16 13:00:49 [info] [Telegram] OK Mini Máquina Seladora Plástico Embalagem Pilha Lac
+2026-03-16 13:00:55 [info] [Telegram] OK Chave T 10mm Longa 62cm de Máquina de Lavar Roupa 
+2026-03-16 13:01:00 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 13:17:43 [info] ═══════════════════════════════════
+2026-03-16 13:17:43 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 13:17:43 [info] ═══════════════════════════════════
+2026-03-16 13:17:43 [info] 📡 Canais ativos: Telegram
+2026-03-16 13:17:43 [info] Shopee Promo Bot iniciando...
+2026-03-16 13:17:43 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 13:17:43 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 13:17:43 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:17:44 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 13:17:45 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:17:45 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 13:17:46 [info] ═══════════════════════════════════
+2026-03-16 13:17:46 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 13:17:46 [info] ═══════════════════════════════════
+2026-03-16 13:17:46 [info] 📡 Canais ativos: Telegram
+2026-03-16 13:17:46 [info] Shopee Promo Bot iniciando...
+2026-03-16 13:17:46 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 13:17:46 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 13:17:46 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:17:47 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 13:17:48 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:17:48 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 13:17:49 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:17:49 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 13:17:50 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:17:50 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 13:17:52 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:17:52 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 13:17:53 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:17:53 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 13:17:54 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:17:54 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 13:17:56 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:17:56 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 13:17:57 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:17:57 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 13:17:58 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:17:58 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 13:17:58 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:58 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:58 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:58 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:59 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:59 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:59 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:59 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:17:59 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:18:00 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:18:00 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:18:00 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:18:01 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:18:02 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:18:02 [info] Total unico: 450 produtos
+2026-03-16 13:18:02 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 13:18:02 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 13:18:02 [info] Aprovados: 371 produtos
+2026-03-16 13:18:02 [info] Ignorando ja enviados (24h): 185
+2026-03-16 13:18:02 [info] Disponiveis para selecao: 190 produtos
+2026-03-16 13:18:02 [info] Qualificados para envio neste ciclo: 190 | limite do ciclo: 7
+2026-03-16 13:18:03 [info] [Telegram] OK Meias Cuidados Com Os Pés Spa Uso Doméstico Novo S
+2026-03-16 13:18:09 [info] [Telegram] OK Shampoo Tonalizante Escurecedor S/ Amônia Avelã, M
+2026-03-16 13:18:15 [info] [Telegram] OK Body Collant  Feminino Regata Blusa Decote Quadrad
+2026-03-16 13:18:21 [info] [Telegram] OK Conjunto Infantil Feminino 2 a 12 Anos Regata Riba
+2026-03-16 13:18:27 [info] [Telegram] OK Capa de Colchão Impermeavel Protetor Matelado Ultr
+2026-03-16 13:18:33 [info] [Telegram] OK Protetor Impermeável para Colchão SUPER SILENCIOSO
+2026-03-16 13:18:38 [info] ═══════════════════════════════════
+2026-03-16 13:18:38 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 13:18:38 [info] ═══════════════════════════════════
+2026-03-16 13:18:38 [info] 📡 Canais ativos: Telegram
+2026-03-16 13:18:38 [info] Shopee Promo Bot iniciando...
+2026-03-16 13:18:38 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 13:18:38 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 13:18:38 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:18:38 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:39 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 13:18:41 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:45 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:45 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:18:45 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:18:45 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:47 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:51 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:51 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:18:51 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:18:51 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:53 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:58 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:18:58 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:18:58 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:18:58 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:00 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:04 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:04 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:04 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:04 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:06 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:11 [info] ═══════════════════════════════════
+2026-03-16 13:19:11 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 13:19:11 [info] ═══════════════════════════════════
+2026-03-16 13:19:11 [info] 📡 Canais ativos: Telegram
+2026-03-16 13:19:11 [info] Shopee Promo Bot iniciando...
+2026-03-16 13:19:11 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 13:19:11 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 13:19:11 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:19:11 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:11 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 13:19:13 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:18 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:18 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:18 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:18 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:19 [info] ═══════════════════════════════════
+2026-03-16 13:19:19 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 13:19:19 [info] ═══════════════════════════════════
+2026-03-16 13:19:19 [info] 📡 Canais ativos: Telegram
+2026-03-16 13:19:19 [info] Shopee Promo Bot iniciando...
+2026-03-16 13:19:19 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 13:19:19 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 13:19:19 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:19:20 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:20 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 13:19:22 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:26 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:26 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:26 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:26 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:29 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:33 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:33 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:33 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:33 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:35 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:39 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:39 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:39 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:39 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:41 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:46 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:46 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:46 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:46 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:48 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:52 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:52 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:52 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:52 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:54 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:58 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:19:58 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:19:58 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:19:59 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:01 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:05 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:05 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:20:05 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:20:05 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:07 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:11 [error] Tentativa 3/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:11 [error] Desistindo apos 3 tentativas: WEB
+2026-03-16 13:20:11 [info] Pagina 1: 0 produtos recebidos (WEB JSON)
+2026-03-16 13:20:11 [error] Tentativa 1/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:14 [error] Tentativa 2/3 falhou [WEB]: Request failed with status code 403
+2026-03-16 13:20:19 [info] ═══════════════════════════════════
+2026-03-16 13:20:19 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-16 13:20:19 [info] ═══════════════════════════════════
+2026-03-16 13:20:19 [info] 📡 Canais ativos: Telegram
+2026-03-16 13:20:19 [info] Shopee Promo Bot iniciando...
+2026-03-16 13:20:19 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-16 13:20:19 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-16 13:20:19 [info] Iniciando ciclo de promocoes...
+2026-03-16 13:20:20 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-16 13:20:21 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:20:21 [info] Total acumulado [beleza]: 50 produtos
+2026-03-16 13:20:22 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:20:22 [info] Total acumulado [beleza]: 100 produtos
+2026-03-16 13:20:23 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:20:23 [info] Total acumulado [beleza]: 150 produtos
+2026-03-16 13:20:25 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:20:25 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-16 13:20:26 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:20:26 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-16 13:20:27 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:20:27 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-16 13:20:28 [info] Pagina 1: 50 produtos recebidos
+2026-03-16 13:20:28 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-16 13:20:29 [info] Pagina 2: 50 produtos recebidos
+2026-03-16 13:20:29 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-16 13:20:30 [info] Pagina 3: 50 produtos recebidos
+2026-03-16 13:20:30 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-16 13:20:30 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:31 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:31 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:31 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:31 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:31 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:33 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:34 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:35 [info] Pagina 1: 0 produtos recebidos
+2026-03-16 13:20:35 [info] Total unico: 450 produtos
+2026-03-16 13:20:35 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 6x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 2x desconto 8.0% < minimo 10%
+2026-03-16 13:20:35 [info] Filtro: 371/450 produtos aprovados
+2026-03-16 13:20:35 [info] Aprovados: 371 produtos
+2026-03-16 13:20:35 [info] Ignorando ja enviados (24h): 191
+2026-03-16 13:20:35 [info] Disponiveis para selecao: 184 produtos
+2026-03-16 13:20:35 [info] Qualificados para envio neste ciclo: 184 | limite do ciclo: 7
+2026-03-16 13:20:36 [info] [Telegram] OK NewShow Cartela De Cilios Tufo Tufinho New Show 10
+2026-03-16 13:20:42 [info] [Telegram] OK 40-120 Pçs Hidrocolóide Acne Remendos Rosto Espinh
+2026-03-16 13:20:48 [info] [Telegram] OK Cropped Feminina de Tule Transparente de Manga Rou
+2026-03-16 13:20:54 [info] [Telegram] OK Kit Calcinhas com Ajuste Lateral Estilo Tanga Lind
+2026-03-16 13:20:59 [info] [Telegram] OK Fita de Led Mangueira Neon 5 Metros Alto Brilho Fl
+2026-03-16 13:21:05 [info] [Telegram] OK 1/2/3 Peças Borrifador Azeite Pulverizador Premium
+2026-03-16 13:21:11 [info] [Telegram] OK KIT Adesivos Protetores de Ralo Tela Descartavel A
+2026-03-16 13:21:16 [info] Ciclo concluido: 7 produtos enviados.
+2026-03-16 13:21:16 [info] Ciclos agendados a cada 20 minuto(s).
