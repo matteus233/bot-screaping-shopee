@@ -45,7 +45,7 @@ export const filterConfig: FilterConfig = {
   maxPriceVsHistorical: 1.05,
   keywordsWhitelist: [],
   keywordsBlacklist: ["replica", "falsificado", "imitacao"],
-  allowedCategories: ["beleza", "moda_feminina", "casa_decoracao", "creamy", "principia", "océane", "ricca", "medicube", "maquiagem", "ruby rosé", "salonline", "produtos de limpeza", "nívea", "decoracao", "decoração", "eletrodoméstico", "eletrodomestico"],
+  allowedCategories: ["beleza", "moda_feminina", "casa_decoracao", "creamy", "principia", "océane", "ricca", "medicube", "maquiagem", "ruby rosé", "salonline", "produtos de limpeza", "nívea", "decoracao", "decoração", "eletrodoméstico", "eletrodomestico", "lola"],
 };
 
 export const config: BotConfig = {
