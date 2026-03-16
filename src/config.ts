@@ -27,7 +27,7 @@ const parsed = EnvSchema.safeParse(process.env);
 if (!parsed.success) {
   console.error("Erro nas variaveis de ambiente:");
   parsed.error.issues.forEach((i) =>
-    console.error(`� ${i.path.join(".")}: ${i.message}`)
+    console.error(`� ${i.path.join(".")}: ${i.message}`)
   );
   process.exit(1);
 }
@@ -45,7 +45,7 @@ export const filterConfig: FilterConfig = {
   maxPriceVsHistorical: 1.05,
   keywordsWhitelist: [],
   keywordsBlacklist: ["replica", "falsificado", "imitacao"],
-  allowedCategories: ["beleza", "moda_feminina", "casa_decoracao"],
+  allowedCategories: ["beleza", "moda_feminina", "casa_decoracao", "creamy", "principia", "océane", "ricca", "medicube", "maquiagem", "ruby rosé", "salonline", "produtos de limpeza", "nívea", "decoracao", "decoração", "eletrodoméstico", "eletrodomestico"],
 };
 
 export const config: BotConfig = {
@@ -85,6 +85,24 @@ export const config: BotConfig = {
       moda_feminina: 0.3,
       casa_decoracao: 0.3,
     },
+    quietHours: {
+      enabled: true,
+      startHour: 23,
+      endHour: 6,
+      allowOnEventDays: true,
+    },
+    eventDays: [
+      "2026-04-04",
+      "2026-05-05",
+      "2026-06-06",
+      "2026-07-07",
+      "2026-08-08",
+      "2026-09-09",
+      "2026-10-10",
+      "2026-11-11",
+      "2026-11-27",
+      "2026-11-30"
+    ],
   },
 
   filter: filterConfig,
@@ -94,3 +112,4 @@ export const config: BotConfig = {
 
   logLevel: env.LOG_LEVEL,
 };
+

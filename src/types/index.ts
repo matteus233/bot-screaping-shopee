@@ -89,6 +89,13 @@ export interface BotConfig {
     maxPerCycle: number;
     minDiscountToSend: number;
     categoryCaps: Record<string, number>;
+    quietHours: {
+      enabled: boolean;
+      startHour: number;
+      endHour: number;
+      allowOnEventDays: boolean;
+    };
+    eventDays: string[]; // YYYY-MM-DD
   };
   filter: FilterConfig;
   databasePath: string;       // SQLite path

@@ -40,6 +40,30 @@ function getDailyRange(now: Date): { start: Date; end: Date } {
   return { start, end };
 }
 
+function isEventDay(now: Date, eventDays: string[]): boolean {
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const dd = String(now.getDate()).padStart(2, "0");
+  const key = `${yyyy}-${mm}-${dd}`;
+  return eventDays.includes(key);
+}
+
+function isQuietHours(now: Date): boolean {
+  const q = config.marketing.quietHours;
+  if (!q.enabled) return false;
+  if (q.allowOnEventDays && isEventDay(now, config.marketing.eventDays)) {
+    return false;
+  }
+
+  const h = now.getHours();
+  const start = q.startHour;
+  const end = q.endHour;
+
+  if (start === end) return false;
+  if (start < end) return h >= start && h < end;
+  return h >= start || h < end;
+}
+
 function getCyclesLeft(now: Date, intervalMinutes: number): number {
   const end = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0);
   const diffMs = end.getTime() - now.getTime();
@@ -77,6 +101,12 @@ export class ShopeeBot {
     logger.info("Iniciando ciclo de promocoes...");
 
     try {
+      const now = new Date();
+      const quiet = isQuietHours(now);
+      if (quiet) {
+        logger.info("Fora do horario permitido para envio no canal. Alertas seguem ativos.");
+      }
+
       // Limpeza simples para manter o banco leve (mantem 90 dias)
       const cleaned = await this.db.cleanupSentOlderThan(90);
       if (cleaned > 0) {
@@ -110,7 +140,6 @@ export class ShopeeBot {
       }
       logger.info(`Disponiveis para selecao: ${unsent.length} produtos`);
 
-      const now = new Date();
       const daily = getDailyRange(now);
       const sentToday = await this.db.countSentBetween("telegram", daily.start, daily.end);
       const remainingDay = Math.max(0, config.marketing.maxPerDay - sentToday);
@@ -202,13 +231,17 @@ export class ShopeeBot {
 
         product._affiliateUrl = affiliateUrl;
 
-        const tg = config.telegram.enabled
+        const tg = config.telegram.enabled && !quiet
           ? await this.telegram.sendProduct(product, affiliateUrl)
           : false;
 
         const wa = config.whatsapp.enabled
           ? await this.whatsapp.sendProduct(product, affiliateUrl)
           : false;
+
+        if (config.telegram.enabled) {
+          await this.telegram.notifyAlerts(product, affiliateUrl);
+        }
 
         if (tg || wa) {
           sent++;
