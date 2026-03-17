@@ -140,6 +140,13 @@ export class ShopeeBot {
       }
       logger.info(`Disponiveis para selecao: ${unsent.length} produtos`);
 
+      const dedupByName = deduplicateByNameBest(unsent);
+      if (dedupByName.length !== unsent.length) {
+        logger.info(
+          `Deduplicados por nome: ${unsent.length - dedupByName.length} removidos (restante ${dedupByName.length})`
+        );
+      }
+
       const daily = getDailyRange(now);
       const sentToday = await this.db.countSentBetween("telegram", daily.start, daily.end);
       const remainingDay = Math.max(0, config.marketing.maxPerDay - sentToday);
@@ -155,7 +162,7 @@ export class ShopeeBot {
 
       // Prioriza por score e exige desconto minimo real
       const byCategory = new Map<string, ShopeeProduct[]>();
-      for (const p of unsent) {
+      for (const p of dedupByName) {
         const cat = String(p.catId ?? p.categoryId ?? "");
         if (!byCategory.has(cat)) byCategory.set(cat, []);
         byCategory.get(cat)?.push(p);
@@ -331,4 +338,54 @@ function deduplicateById(products: ShopeeProduct[]): ShopeeProduct[] {
     seen.add(key);
     return true;
   });
+}
+
+function normalizeName(name: string): string {
+  return name
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Deduplica produtos com nome muito parecido (mesmo nome normalizado),
+// escolhendo o "melhor" por score e desempates por desconto, avaliacao e vendas.
+function deduplicateByNameBest(products: ShopeeProduct[]): ShopeeProduct[] {
+  const groups = new Map<string, ShopeeProduct[]>();
+  for (const p of products) {
+    const key = normalizeName(p.itemName ?? "");
+    const groupKey = key || `${p.itemId}:${p.shopId}`;
+    if (!groups.has(groupKey)) groups.set(groupKey, []);
+    groups.get(groupKey)?.push(p);
+  }
+
+  const pickBest = (list: ShopeeProduct[]): ShopeeProduct => {
+    return list
+      .map((p) => ({
+        p,
+        score: computeScore(p),
+        discount: computeDiscountPct(p) ?? 0,
+        rating: p.itemRating ?? 0,
+        sales: p.sales ?? 0,
+      }))
+      .sort((a, b) => {
+        if (a.score !== b.score) return b.score - a.score;
+        if (a.discount !== b.discount) return b.discount - a.discount;
+        if (a.rating !== b.rating) return b.rating - a.rating;
+        return b.sales - a.sales;
+      })[0].p;
+  };
+
+  const result: ShopeeProduct[] = [];
+  for (const list of groups.values()) {
+    const historical = list.filter((p) => p._isHistoricalLow);
+    if (historical.length > 0) {
+      result.push(pickBest(historical));
+    } else {
+      result.push(pickBest(list));
+    }
+  }
+  return result;
 }

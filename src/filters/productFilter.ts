@@ -213,6 +213,7 @@ export class ProductFilter {
     }
 
     p._historicalMin = histMin;
+    p._isHistoricalLow = current <= histMin;
     return { passed: true, reason: "" };
   }
 }

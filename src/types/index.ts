@@ -29,6 +29,7 @@ export interface ShopeeProduct {
   // Campos enriquecidos pelo bot (prefixo _)
   _discountPct?: number;
   _historicalMin?: number;
+  _isHistoricalLow?: boolean;
   _affiliateUrl?: string;
 }
 
