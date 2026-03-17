@@ -341,13 +341,26 @@ function deduplicateById(products: ShopeeProduct[]): ShopeeProduct[] {
 }
 
 function normalizeName(name: string): string {
-  return name
+  const cleaned = name
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+
+  if (!cleaned) return "";
+
+  const colorWords = new Set([
+    "preto", "preta", "branco", "branca", "vermelho", "vermelha", "azul",
+    "rosa", "pink", "roxo", "roxa", "verde", "amarelo", "amarela",
+    "laranja", "cinza", "cinzento", "nude", "bege", "marrom", "vinho",
+    "dourado", "dourada", "prateado", "prateada", "lilas", "coral",
+    "turquesa", "grafite", "black", "white", "grey", "gray", "gold", "silver",
+  ]);
+
+  const tokens = cleaned.split(" ").filter((t) => t && !colorWords.has(t));
+  return tokens.join(" ").trim();
 }
 
 // Deduplica produtos com nome muito parecido (mesmo nome normalizado),
