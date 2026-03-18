@@ -1,6 +1,7 @@
 // src/notifiers/telegramNotifier.ts - Notificador + bot de comandos via Telegraf
 import { Telegraf, type Context } from "telegraf";
 import { config, filterConfig } from "../config";
+import { ShopeeClient } from "../api/shopeeClient";
 import { DatabaseManager } from "../database/dbManager";
 import { formatTelegram } from "../utils/formatter";
 import { logger } from "../utils/logger";
@@ -10,6 +11,7 @@ import type { ShopeeProduct } from "../types/index";
 export class TelegramNotifier {
   private readonly bot: Telegraf;
   private readonly db: DatabaseManager;
+  private readonly api: ShopeeClient;
   private readonly channelId: string;
   private readonly lastForwardedByUser = new Map<number, { id: number; title?: string; type?: string; ts: number }>();
   private lastPrivateUserId: number | null = null;
@@ -20,6 +22,7 @@ export class TelegramNotifier {
     this.db = db;
     this.channelId = config.telegram.channelId;
     this.bot = new Telegraf(config.telegram.token);
+    this.api = new ShopeeClient();
     this.registerCommands();
   }
 
@@ -113,6 +116,11 @@ export class TelegramNotifier {
         await this.handleAlertCommand(ctx, text);
         return next();
       }
+
+      if (ctx.chat?.type === "private" && this.isShopeeLink(text)) {
+        await this.handleProductLinkPreview(ctx, text);
+        return next();
+      }
       return next();
     });
 
@@ -132,21 +140,7 @@ export class TelegramNotifier {
       return next();
     });
 
-    bot.on("channel_post", (ctx) => {
-      const post = ctx.update.channel_post;
-      const chatId = post?.chat?.id;
-      const title = post?.chat?.title;
-      if (chatId) {
-        const text = `chatId do canal: ${chatId}${title ? ` (${title})` : ""}`;
-        if (this.lastPrivateUserId) {
-          this.bot.telegram.sendMessage(this.lastPrivateUserId, text).catch(() => {
-            logger.info(`[Telegram] ${text}`);
-          });
-        } else {
-          logger.info(`[Telegram] ${text}`);
-        }
-      }
-    });
+    // Removido auto-envio de chatId do canal para o privado para evitar spam
 
     bot.command("start", (ctx) => {
       ctx.replyWithHTML(
@@ -359,6 +353,93 @@ export class TelegramNotifier {
     } catch (err) {
       logger.error(`[Telegram] Erro ao criar alerta: ${err}`);
       return void ctx.reply("Erro ao criar alerta. Tente novamente.");
+    }
+  }
+
+  private isShopeeLink(text: string): boolean {
+    return /shopee\.|shp\.ee/i.test(text);
+  }
+
+  private extractShopeeIds(text: string): { itemId: string; shopId: string } | null {
+    const match = text.match(/i\.(\d+)\.(\d+)/);
+    if (match) {
+      const [, shopId, itemId] = match;
+      return { itemId, shopId };
+    }
+    const matchLegacy = text.match(/-i\.(\d+)\.(\d+)/);
+    if (matchLegacy) {
+      const [, shopId, itemId] = matchLegacy;
+      return { itemId, shopId };
+    }
+    const matchAlt = text.match(/\/product\/(\d+)\/(\d+)/);
+    if (matchAlt) {
+      const [, shopId, itemId] = matchAlt;
+      return { itemId, shopId };
+    }
+    return null;
+  }
+
+  private async handleProductLinkPreview(ctx: Context, text: string): Promise<void> {
+    if (!ctx.chat?.id) {
+      return;
+    }
+    let ids = this.extractShopeeIds(text);
+    if (!ids) {
+      const resolved = await this.api.resolveShopeeUrl(text);
+      if (resolved !== text) {
+        ids = this.extractShopeeIds(resolved);
+        if (!ids) {
+          const second = await this.api.resolveShopeeUrl(resolved);
+          if (second !== resolved) {
+            ids = this.extractShopeeIds(second);
+          }
+        }
+      }
+    }
+    if (!ids) {
+      return void ctx.reply("Nao consegui identificar o produto nesse link.");
+    }
+
+    const product = await this.api.getProductDetail(ids.itemId, ids.shopId);
+    if (!product) {
+      return void ctx.reply("Nao consegui buscar esse produto agora. Tente novamente.");
+    }
+
+    const originalUrl = product.offerLink ?? product.itemUrl ?? "";
+    const affiliateUrl = originalUrl
+      ? await this.api.generateAffiliateLink(originalUrl)
+      : undefined;
+    product._affiliateUrl = affiliateUrl;
+
+    const caption = formatTelegram(product, affiliateUrl);
+    const imageUrl = product.imageUrl;
+
+    try {
+      if (imageUrl) {
+        await this.bot.telegram.sendPhoto(ctx.chat.id, imageUrl, {
+          caption,
+          parse_mode: "HTML",
+        });
+      } else {
+        await this.bot.telegram.sendMessage(ctx.chat.id, caption, {
+          parse_mode: "HTML",
+        });
+      }
+      if (config.telegram.channelId) {
+        if (imageUrl) {
+          await this.bot.telegram.sendPhoto(config.telegram.channelId, imageUrl, {
+            caption,
+            parse_mode: "HTML",
+          });
+        } else {
+          await this.bot.telegram.sendMessage(config.telegram.channelId, caption, {
+            parse_mode: "HTML",
+          });
+        }
+      }
+    } catch (err) {
+      logger.error(`[Telegram] Erro ao enviar preview: ${err}`);
+      await ctx.reply("Nao consegui enviar a mensagem formatada agora.");
     }
   }
 

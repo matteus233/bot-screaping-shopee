@@ -87,13 +87,13 @@ export const config: BotConfig = {
   rateLimit: {
     requestsPerMinute: 60,
     burstSize: 10,
-    fetchIntervalMinutes: 20,
+    fetchIntervalMinutes: 30,
   },
 
   marketing: {
-    maxPerDay: 350,
-    maxPerCycle: 20,
-    minDiscountToSend: 10,
+    maxPerDay: 100,
+    maxPerCycle: 5,
+    minDiscountToSend: 15,
     categoryCaps: {
       beleza: 0.4,
       moda_feminina: 0.3,

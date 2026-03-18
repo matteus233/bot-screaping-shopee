@@ -30,6 +30,46 @@ export class ShopeeClient {
     });
   }
 
+  // Resolve links encurtados da Shopee para URL final
+  async resolveShopeeUrl(url: string): Promise<string> {
+    const tryResolve = async (u: string, via: "GET" | "HEAD"): Promise<string> => {
+      const resp = await axios.request({
+        url: u,
+        method: via,
+        maxRedirects: 0,
+        timeout: 15_000,
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        },
+        validateStatus: () => true,
+      });
+      const loc = resp.headers?.location as string | undefined;
+      return loc ?? u;
+    };
+
+    try {
+      let current = url;
+      // tenta 1: HEAD sem seguir
+      current = await tryResolve(current, "HEAD");
+      // tenta 2: GET sem seguir
+      current = await tryResolve(current, "GET");
+      // se ainda for curto, tenta abrir com redirects
+      if (current === url) {
+        const resp = await axios.get(url, {
+          maxRedirects: 5,
+          timeout: 15_000,
+          headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" },
+        });
+        const finalUrl = (resp.request?.res?.responseUrl as string | undefined) ?? url;
+        return finalUrl;
+      }
+      return current;
+    } catch (err) {
+      logger.warn(`[Shopee] Falha ao resolver link: ${err}`);
+      return url;
+    }
+  }
+
   // ----------------------------------------
   //  Auth header (GraphQL)
   // ----------------------------------------
@@ -191,7 +231,7 @@ export class ShopeeClient {
   /** Detalhes de um produto. */
   async getProductDetail(itemId: string, shopId: string): Promise<ShopeeProduct | null> {
     const query = `
-      query ProductOfferById($itemId: Int, $shopId: Int, $page: Int, $limit: Int) {
+      query ProductOfferById($itemId: Int64, $shopId: Int64, $page: Int, $limit: Int) {
         productOfferV2(itemId: $itemId, shopId: $shopId, page: $page, limit: $limit) {
           nodes {
             itemId
@@ -212,7 +252,7 @@ export class ShopeeClient {
 
     const data = await this.graphql<{ productOfferV2?: { nodes?: Array<Record<string, unknown>> } }>(
       query,
-      { itemId: Number(itemId), shopId: Number(shopId), page: 1, limit: 1 },
+      { itemId: String(itemId), shopId: String(shopId), page: 1, limit: 1 },
     );
 
     const node = data?.productOfferV2?.nodes?.[0];

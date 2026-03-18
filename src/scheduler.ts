@@ -364,7 +364,7 @@ function deduplicateById(products: ShopeeProduct[]): ShopeeProduct[] {
   });
 }
 
-function normalizeName(name: string): string {
+function tokenizeName(name: string): string[] {
   const cleaned = name
     .toLowerCase()
     .normalize("NFD")
@@ -373,7 +373,7 @@ function normalizeName(name: string): string {
     .replace(/\s+/g, " ")
     .trim();
 
-  if (!cleaned) return "";
+  if (!cleaned) return [];
 
   const colorWords = new Set([
     "preto", "preta", "branco", "branca", "vermelho", "vermelha", "azul",
@@ -386,6 +386,11 @@ function normalizeName(name: string): string {
   const removeWords = new Set([
     "kit", "combo", "pack", "un", "und", "unid", "unidade", "unidades",
     "pc", "pcs", "peca", "pecas",
+    "com", "para", "de", "da", "do", "e", "a", "o", "os", "as",
+    "novo", "nova", "original", "oficial", "importado", "premium",
+    "modelo", "marca", "basico", "basica", "conforto", "confortavel",
+    "sem", "costura", "cintura", "alta", "baixo", "media", "meia",
+    "liso", "lisa", "algodao", "microfibra", "poliester", "nylon",
   ]);
 
   const isSizeToken = (t: string): boolean => {
@@ -401,45 +406,82 @@ function normalizeName(name: string): string {
     .filter((t) => !colorWords.has(t))
     .filter((t) => !removeWords.has(t))
     .filter((t) => !isSizeToken(t));
-  return tokens.join(" ").trim();
+
+  return Array.from(new Set(tokens));
+}
+
+function normalizeName(name: string): string {
+  const tokens = tokenizeName(name);
+  if (tokens.length === 0) return "";
+  const top = tokens.sort((a, b) => b.length - a.length).slice(0, 6).sort();
+  return top.join(" ").trim();
+}
+
+function coreToken(tokens: string[]): string | null {
+  const coreList = new Set([
+    "calcinha", "calcinhas", "tanga", "sutia", "sutia", "meia",
+    "short", "anagua", "cueca", "top", "camiseta", "blusa",
+    "vestido", "calca", "saia", "sutiã", "sutia",
+  ]);
+  for (const t of tokens) {
+    if (coreList.has(t)) return t;
+  }
+  return null;
+}
+
+function jaccard(a: Set<string>, b: Set<string>): number {
+  if (a.size === 0 || b.size === 0) return 0;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  const union = a.size + b.size - inter;
+  return union === 0 ? 0 : inter / union;
 }
 
 // Deduplica produtos com nome muito parecido (mesmo nome normalizado),
 // escolhendo o "melhor" por score e desempates por desconto, avaliacao e vendas.
 function deduplicateByNameBest(products: ShopeeProduct[]): ShopeeProduct[] {
-  const groups = new Map<string, ShopeeProduct[]>();
-  for (const p of products) {
-    const key = normalizeName(p.itemName ?? "");
-    const groupKey = key || `${p.itemId}:${p.shopId}`;
-    if (!groups.has(groupKey)) groups.set(groupKey, []);
-    groups.get(groupKey)?.push(p);
-  }
+  const scored = products
+    .map((p) => ({
+      p,
+      score: computeScore(p),
+      discount: computeDiscountPct(p) ?? 0,
+      rating: p.itemRating ?? 0,
+      sales: p.sales ?? 0,
+      tokens: tokenizeName(p.itemName ?? ""),
+    }))
+    .sort((a, b) => {
+      if (a.score !== b.score) return b.score - a.score;
+      if (a.discount !== b.discount) return b.discount - a.discount;
+      if (a.rating !== b.rating) return b.rating - a.rating;
+      return b.sales - a.sales;
+    });
 
-  const pickBest = (list: ShopeeProduct[]): ShopeeProduct => {
-    return list
-      .map((p) => ({
-        p,
-        score: computeScore(p),
-        discount: computeDiscountPct(p) ?? 0,
-        rating: p.itemRating ?? 0,
-        sales: p.sales ?? 0,
-      }))
-      .sort((a, b) => {
-        if (a.score !== b.score) return b.score - a.score;
-        if (a.discount !== b.discount) return b.discount - a.discount;
-        if (a.rating !== b.rating) return b.rating - a.rating;
-        return b.sales - a.sales;
-      })[0].p;
-  };
+  const kept: Array<{
+    p: ShopeeProduct;
+    tokens: Set<string>;
+    core: string | null;
+  }> = [];
 
-  const result: ShopeeProduct[] = [];
-  for (const list of groups.values()) {
-    const historical = list.filter((p) => p._isHistoricalLow);
-    if (historical.length > 0) {
-      result.push(pickBest(historical));
-    } else {
-      result.push(pickBest(list));
+  for (const entry of scored) {
+    const tokensSet = new Set(entry.tokens);
+    const core = coreToken(entry.tokens);
+    let similar = false;
+
+    for (const k of kept) {
+      const jac = jaccard(tokensSet, k.tokens);
+      const sharedLong =
+        entry.tokens.filter((t) => t.length >= 6 && k.tokens.has(t)).length >= 2;
+      const coreMatch = core && k.core && core === k.core;
+      if ((coreMatch && jac >= 0.5) || jac >= 0.65 || sharedLong) {
+        similar = true;
+        break;
+      }
+    }
+
+    if (!similar) {
+      kept.push({ p: entry.p, tokens: tokensSet, core });
     }
   }
-  return result;
+
+  return kept.map((k) => k.p);
 }
