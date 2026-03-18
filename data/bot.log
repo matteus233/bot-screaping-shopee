@@ -14327,3 +14327,472 @@
 2026-03-18 13:51:44 [info] Deduplicados por nome: 4 removidos (restante 22)
 2026-03-18 13:51:44 [info] Limite diario atingido. Nenhum envio neste ciclo.
 2026-03-18 13:51:44 [info] Ciclos agendados a cada 30 minuto(s).
+2026-03-18 14:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 14:00:03 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 14:00:03 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 14:00:04 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 14:00:04 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 14:00:05 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 14:00:05 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 14:00:07 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 14:00:07 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 14:00:08 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 14:00:08 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 14:00:09 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 14:00:09 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 14:00:12 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 14:00:12 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 14:00:13 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 14:00:13 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 14:00:14 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 14:00:14 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 14:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:18 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:19 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:00:19 [info] Total unico: 450 produtos
+2026-03-18 14:00:19 [info] Motivos mais comuns: 43x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 14:00:19 [info] Filtro: 372/450 produtos aprovados
+2026-03-18 14:00:19 [info] Aprovados: 372 produtos
+2026-03-18 14:00:19 [info] Ignorando ja enviados (24h): 354
+2026-03-18 14:00:19 [info] Disponiveis para selecao: 30 produtos
+2026-03-18 14:00:19 [info] Ignorando nomes ja enviados (24h): 4
+2026-03-18 14:00:19 [info] Deduplicados por nome: 5 removidos (restante 25)
+2026-03-18 14:00:19 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 14:30:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 14:30:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 14:30:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 14:30:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 14:30:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 14:30:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 14:30:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 14:30:06 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 14:30:06 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 14:30:07 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 14:30:07 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 14:30:08 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 14:30:08 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 14:30:10 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 14:30:10 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 14:30:11 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 14:30:11 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 14:30:12 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 14:30:12 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 14:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 14:30:17 [info] Total unico: 450 produtos
+2026-03-18 14:30:17 [info] Motivos mais comuns: 43x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 14:30:17 [info] Filtro: 371/450 produtos aprovados
+2026-03-18 14:30:17 [info] Aprovados: 371 produtos
+2026-03-18 14:30:17 [info] Ignorando ja enviados (24h): 342
+2026-03-18 14:30:17 [info] Disponiveis para selecao: 42 produtos
+2026-03-18 14:30:17 [info] Ignorando nomes ja enviados (24h): 5
+2026-03-18 14:30:17 [info] Deduplicados por nome: 8 removidos (restante 34)
+2026-03-18 14:30:17 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 15:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 15:00:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 15:00:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 15:00:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 15:00:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 15:00:03 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 15:00:03 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 15:00:06 [warn] API erro 10000: System Error
+2026-03-18 15:00:06 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:08 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 15:00:08 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 15:00:08 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 15:00:08 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 15:00:09 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 15:00:09 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 15:00:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:10 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:00:15 [info] Total unico: 300 produtos
+2026-03-18 15:00:15 [info] Motivos mais comuns: 31x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 4x desconto 3.0% < minimo 10% | 2x desconto 8.0% < minimo 10% | 1x preco R$3.49 abaixo do minimo R$5
+2026-03-18 15:00:15 [info] Filtro: 246/300 produtos aprovados
+2026-03-18 15:00:15 [info] Aprovados: 246 produtos
+2026-03-18 15:00:15 [info] Ignorando ja enviados (24h): 334
+2026-03-18 15:00:15 [info] Disponiveis para selecao: 37 produtos
+2026-03-18 15:00:15 [info] Ignorando nomes ja enviados (24h): 3
+2026-03-18 15:00:15 [info] Deduplicados por nome: 8 removidos (restante 29)
+2026-03-18 15:00:15 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 15:30:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 15:30:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 15:30:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 15:30:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 15:30:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 15:30:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 15:30:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 15:30:06 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 15:30:06 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 15:30:08 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 15:30:08 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 15:30:09 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 15:30:09 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 15:30:10 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 15:30:10 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 15:30:11 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 15:30:11 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 15:30:12 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 15:30:12 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 15:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 15:30:17 [info] Total unico: 450 produtos
+2026-03-18 15:30:17 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 15:30:17 [info] Filtro: 370/450 produtos aprovados
+2026-03-18 15:30:17 [info] Aprovados: 370 produtos
+2026-03-18 15:30:17 [info] Ignorando ja enviados (24h): 320
+2026-03-18 15:30:17 [info] Disponiveis para selecao: 64 produtos
+2026-03-18 15:30:17 [info] Ignorando nomes ja enviados (24h): 5
+2026-03-18 15:30:17 [info] Deduplicados por nome: 17 removidos (restante 47)
+2026-03-18 15:30:17 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 16:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 16:00:03 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:00:03 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 16:00:04 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:00:04 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 16:00:05 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:00:05 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 16:00:07 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:00:07 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 16:00:09 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:00:09 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 16:00:10 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:00:10 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 16:00:11 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:00:11 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 16:00:12 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:00:12 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 16:00:13 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:00:13 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 16:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:18 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:00:18 [info] Total unico: 450 produtos
+2026-03-18 16:00:18 [info] Motivos mais comuns: 45x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 16:00:18 [info] Filtro: 369/450 produtos aprovados
+2026-03-18 16:00:18 [info] Aprovados: 369 produtos
+2026-03-18 16:00:18 [info] Ignorando ja enviados (24h): 313
+2026-03-18 16:00:18 [info] Disponiveis para selecao: 71 produtos
+2026-03-18 16:00:18 [info] Ignorando nomes ja enviados (24h): 5
+2026-03-18 16:00:18 [info] Deduplicados por nome: 19 removidos (restante 52)
+2026-03-18 16:00:18 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 16:05:21 [info] ═══════════════════════════════════
+2026-03-18 16:05:21 [info]    🛍️  Shopee Promo Bot  v1.0.0   
+2026-03-18 16:05:21 [info] ═══════════════════════════════════
+2026-03-18 16:05:21 [info] 📡 Canais ativos: Telegram
+2026-03-18 16:05:21 [info] Shopee Promo Bot iniciando...
+2026-03-18 16:05:21 [info] Banco de dados (PostgreSQL) inicializado.
+2026-03-18 16:05:21 [info] [Telegram] Bot de comandos iniciado (polling manual).
+2026-03-18 16:05:21 [info] Iniciando ciclo de promocoes...
+2026-03-18 16:05:21 [info] [Telegram] Bot conectado: AchadinhaBOT (8754403280)
+2026-03-18 16:05:23 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:05:23 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 16:05:23 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:05:23 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 16:05:24 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:05:24 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 16:05:26 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:05:26 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 16:05:27 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:05:27 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 16:05:28 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:05:28 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 16:05:29 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:05:29 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 16:05:31 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:05:31 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 16:05:31 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:05:31 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 16:05:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:32 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:33 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:33 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:33 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:33 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:34 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:34 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:34 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:34 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:35 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:36 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:37 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:05:37 [info] Total unico: 450 produtos
+2026-03-18 16:05:37 [info] Motivos mais comuns: 45x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 16:05:37 [info] Filtro: 369/450 produtos aprovados
+2026-03-18 16:05:37 [info] Aprovados: 369 produtos
+2026-03-18 16:05:37 [info] Ignorando ja enviados (24h): 306
+2026-03-18 16:05:37 [info] Disponiveis para selecao: 78 produtos
+2026-03-18 16:05:37 [info] Ignorando nomes ja enviados (24h): 5
+2026-03-18 16:05:37 [info] Deduplicados por nome: 23 removidos (restante 55)
+2026-03-18 16:05:37 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 16:05:37 [info] Ciclos agendados a cada 30 minuto(s).
+2026-03-18 16:05:41 [info] [Telegram] Poll updates: 1 (offset 0)
+2026-03-18 16:05:42 [info] [Telegram] Poll updates: 1 (offset 765419321)
+2026-03-18 16:05:45 [info] [Telegram] Poll updates: 1 (offset 765419322)
+2026-03-18 16:05:47 [info] [Telegram] Poll updates: 1 (offset 765419323)
+2026-03-18 16:05:50 [info] [Telegram] Poll updates: 1 (offset 765419324)
+2026-03-18 16:05:52 [info] [Telegram] Poll updates: 1 (offset 765419325)
+2026-03-18 16:05:54 [info] [Telegram] Poll updates: 1 (offset 765419326)
+2026-03-18 16:07:05 [info] [Telegram] Poll updates: 1 (offset 765419327)
+2026-03-18 16:07:05 [info] [Telegram] Mensagem recebida: private | https://br.shp.ee/C6PGTPPX
+2026-03-18 16:07:12 [info] [Telegram] Poll updates: 1 (offset 765419328)
+2026-03-18 16:07:12 [info] [Telegram] Mensagem recebida: private | https://br.shp.ee/PTvjGeig
+2026-03-18 16:07:20 [info] [Telegram] Poll updates: 1 (offset 765419329)
+2026-03-18 16:07:20 [info] [Telegram] Mensagem recebida: private | https://br.shp.ee/9jBC3mjn
+2026-03-18 16:07:53 [info] [Telegram] Poll updates: 1 (offset 765419330)
+2026-03-18 16:08:18 [info] [Telegram] Poll updates: 1 (offset 765419331)
+2026-03-18 16:22:44 [info] [Telegram] Poll updates: 1 (offset 765419332)
+2026-03-18 16:23:15 [info] [Telegram] Poll updates: 1 (offset 765419333)
+2026-03-18 16:30:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 16:30:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:30:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 16:30:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:30:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 16:30:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:30:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 16:30:06 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:30:06 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 16:30:07 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:30:07 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 16:30:08 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:30:08 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 16:30:10 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 16:30:10 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 16:30:11 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 16:30:11 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 16:30:12 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 16:30:12 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 16:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 16:30:17 [info] Total unico: 450 produtos
+2026-03-18 16:30:17 [info] Motivos mais comuns: 44x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 16:30:17 [info] Filtro: 370/450 produtos aprovados
+2026-03-18 16:30:17 [info] Aprovados: 370 produtos
+2026-03-18 16:30:17 [info] Ignorando ja enviados (24h): 299
+2026-03-18 16:30:17 [info] Disponiveis para selecao: 84 produtos
+2026-03-18 16:30:17 [info] Ignorando nomes ja enviados (24h): 6
+2026-03-18 16:30:17 [info] Deduplicados por nome: 27 removidos (restante 57)
+2026-03-18 16:30:17 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 16:30:24 [info] [Telegram] Poll updates: 1 (offset 765419334)
+2026-03-18 16:30:27 [info] [Telegram] Poll updates: 1 (offset 765419335)
+2026-03-18 16:30:30 [info] [Telegram] Poll updates: 1 (offset 765419336)
+2026-03-18 16:39:14 [info] [Telegram] Poll updates: 1 (offset 765419337)
+2026-03-18 16:39:16 [info] [Telegram] Poll updates: 1 (offset 765419338)
+2026-03-18 16:42:09 [info] [Telegram] Poll updates: 1 (offset 765419339)
+2026-03-18 16:42:48 [info] [Telegram] Poll updates: 1 (offset 765419340)
+2026-03-18 16:43:26 [info] [Telegram] Poll updates: 1 (offset 765419341)
+2026-03-18 16:54:56 [info] [Telegram] Poll updates: 1 (offset 765419342)
+2026-03-18 16:54:59 [info] [Telegram] Poll updates: 1 (offset 765419343)
+2026-03-18 16:55:01 [info] [Telegram] Poll updates: 1 (offset 765419344)
+2026-03-18 16:55:04 [info] [Telegram] Poll updates: 1 (offset 765419345)
+2026-03-18 17:00:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 17:00:01 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 17:00:01 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 17:00:02 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 17:00:02 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 17:00:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 17:00:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 17:00:06 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 17:00:06 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 17:00:07 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 17:00:07 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 17:00:08 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 17:00:08 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 17:00:09 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 17:00:09 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 17:00:10 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 17:00:10 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 17:00:11 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 17:00:11 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 17:00:11 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:00:17 [info] Total unico: 450 produtos
+2026-03-18 17:00:17 [info] Motivos mais comuns: 45x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 17:00:17 [info] Filtro: 369/450 produtos aprovados
+2026-03-18 17:00:17 [info] Aprovados: 369 produtos
+2026-03-18 17:00:17 [info] Ignorando ja enviados (24h): 292
+2026-03-18 17:00:17 [info] Disponiveis para selecao: 91 produtos
+2026-03-18 17:00:17 [info] Ignorando nomes ja enviados (24h): 6
+2026-03-18 17:00:17 [info] Deduplicados por nome: 33 removidos (restante 58)
+2026-03-18 17:00:17 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 17:00:25 [info] [Telegram] Poll updates: 1 (offset 765419346)
+2026-03-18 17:02:07 [info] [Telegram] Poll updates: 1 (offset 765419347)
+2026-03-18 17:02:35 [info] [Telegram] Poll updates: 1 (offset 765419348)
+2026-03-18 17:03:13 [info] [Telegram] Poll updates: 1 (offset 765419349)
+2026-03-18 17:04:39 [info] [Telegram] Poll updates: 1 (offset 765419350)
+2026-03-18 17:05:06 [info] [Telegram] Poll updates: 1 (offset 765419351)
+2026-03-18 17:05:45 [info] [Telegram] Poll updates: 1 (offset 765419352)
+2026-03-18 17:06:20 [info] [Telegram] Poll updates: 1 (offset 765419353)
+2026-03-18 17:06:57 [info] [Telegram] Poll updates: 1 (offset 765419354)
+2026-03-18 17:08:06 [info] [Telegram] Poll updates: 1 (offset 765419355)
+2026-03-18 17:08:34 [info] [Telegram] Poll updates: 1 (offset 765419356)
+2026-03-18 17:09:39 [info] [Telegram] Poll updates: 1 (offset 765419357)
+2026-03-18 17:10:18 [info] [Telegram] Poll updates: 1 (offset 765419358)
+2026-03-18 17:10:41 [info] [Telegram] Poll updates: 1 (offset 765419359)
+2026-03-18 17:11:09 [info] [Telegram] Poll updates: 1 (offset 765419360)
+2026-03-18 17:11:42 [info] [Telegram] Poll updates: 1 (offset 765419361)
+2026-03-18 17:17:48 [info] [Telegram] Poll updates: 1 (offset 765419362)
+2026-03-18 17:17:50 [info] [Telegram] Poll updates: 1 (offset 765419363)
+2026-03-18 17:17:53 [info] [Telegram] Poll updates: 1 (offset 765419364)
+2026-03-18 17:17:55 [info] [Telegram] Poll updates: 1 (offset 765419365)
+2026-03-18 17:17:57 [info] [Telegram] Poll updates: 1 (offset 765419366)
+2026-03-18 17:17:59 [info] [Telegram] Poll updates: 1 (offset 765419367)
+2026-03-18 17:18:01 [info] [Telegram] Poll updates: 1 (offset 765419368)
+2026-03-18 17:18:15 [info] [Telegram] Poll updates: 1 (offset 765419369)
+2026-03-18 17:19:25 [info] [Telegram] Poll updates: 1 (offset 765419370)
+2026-03-18 17:20:25 [info] [Telegram] Poll updates: 1 (offset 765419371)
+2026-03-18 17:20:57 [info] [Telegram] Poll updates: 1 (offset 765419372)
+2026-03-18 17:22:56 [info] [Telegram] Poll updates: 1 (offset 765419373)
+2026-03-18 17:23:25 [info] [Telegram] Poll updates: 1 (offset 765419374)
+2026-03-18 17:23:43 [info] [Telegram] Poll updates: 1 (offset 765419375)
+2026-03-18 17:24:24 [info] [Telegram] Poll updates: 1 (offset 765419376)
+2026-03-18 17:24:40 [info] [Telegram] Poll updates: 1 (offset 765419377)
+2026-03-18 17:25:04 [info] [Telegram] Poll updates: 1 (offset 765419378)
+2026-03-18 17:30:00 [info] Iniciando ciclo de promocoes...
+2026-03-18 17:30:02 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 17:30:02 [info] Total acumulado [beleza]: 50 produtos
+2026-03-18 17:30:03 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 17:30:03 [info] Total acumulado [beleza]: 100 produtos
+2026-03-18 17:30:04 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 17:30:04 [info] Total acumulado [beleza]: 150 produtos
+2026-03-18 17:30:06 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 17:30:06 [info] Total acumulado [moda_feminina]: 50 produtos
+2026-03-18 17:30:07 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 17:30:07 [info] Total acumulado [moda_feminina]: 100 produtos
+2026-03-18 17:30:08 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 17:30:08 [info] Total acumulado [moda_feminina]: 150 produtos
+2026-03-18 17:30:10 [info] Pagina 1: 50 produtos recebidos
+2026-03-18 17:30:10 [info] Total acumulado [casa_decoracao]: 50 produtos
+2026-03-18 17:30:11 [info] Pagina 2: 50 produtos recebidos
+2026-03-18 17:30:11 [info] Total acumulado [casa_decoracao]: 100 produtos
+2026-03-18 17:30:12 [info] Pagina 3: 50 produtos recebidos
+2026-03-18 17:30:12 [info] Total acumulado [casa_decoracao]: 150 produtos
+2026-03-18 17:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:12 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:13 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:14 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:15 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:16 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:17 [info] Pagina 1: 0 produtos recebidos
+2026-03-18 17:30:17 [info] Total unico: 450 produtos
+2026-03-18 17:30:17 [info] Motivos mais comuns: 45x desconto 0.0% < minimo 10% | 5x desconto 7.0% < minimo 10% | 5x desconto 3.0% < minimo 10% | 3x preco R$1.6 abaixo do minimo R$5 | 3x desconto 2.0% < minimo 10%
+2026-03-18 17:30:17 [info] Filtro: 369/450 produtos aprovados
+2026-03-18 17:30:17 [info] Aprovados: 369 produtos
+2026-03-18 17:30:17 [info] Ignorando ja enviados (24h): 278
+2026-03-18 17:30:17 [info] Disponiveis para selecao: 104 produtos
+2026-03-18 17:30:17 [info] Ignorando nomes ja enviados (24h): 6
+2026-03-18 17:30:17 [info] Deduplicados por nome: 39 removidos (restante 65)
+2026-03-18 17:30:17 [info] Limite diario atingido. Nenhum envio neste ciclo.
+2026-03-18 17:30:24 [info] [Telegram] Poll updates: 1 (offset 765419379)
+2026-03-18 17:30:26 [info] [Telegram] Poll updates: 1 (offset 765419380)
+2026-03-18 17:30:27 [info] [Telegram] Poll updates: 1 (offset 765419381)
+2026-03-18 17:30:30 [info] [Telegram] Poll updates: 1 (offset 765419382)
+2026-03-18 17:30:32 [info] [Telegram] Poll updates: 1 (offset 765419383)
+2026-03-18 17:30:34 [info] [Telegram] Poll updates: 1 (offset 765419384)
+2026-03-18 17:42:42 [info] [Telegram] Poll updates: 1 (offset 765419385)
+2026-03-18 17:43:35 [info] [Telegram] Poll updates: 1 (offset 765419386)
+2026-03-18 17:44:05 [info] [Telegram] Poll updates: 1 (offset 765419387)
+2026-03-18 17:44:06 [info] [Telegram] Poll updates: 1 (offset 765419388)
+2026-03-18 17:44:10 [info] [Telegram] Poll updates: 1 (offset 765419389)
+2026-03-18 17:44:11 [info] [Telegram] Poll updates: 1 (offset 765419390)
+2026-03-18 17:44:26 [info] [Telegram] Poll updates: 1 (offset 765419391)
+2026-03-18 17:46:12 [info] [Telegram] Poll updates: 1 (offset 765419392)
+2026-03-18 17:46:12 [info] [Telegram] Mensagem recebida: private | https://br.shp.ee/do37i8gf
