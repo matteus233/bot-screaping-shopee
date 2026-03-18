@@ -30,8 +30,8 @@ function computeScore(p: ShopeeProduct): number {
   const sales = p.sales ?? 0;
   const price = p.priceMin ?? 0;
   const priceScore = price > 0 ? Math.max(0, 30 - Math.log10(price) * 10) : 0;
-  const salesScore = Math.log10(sales + 1) * 10;
-  return discount * 2 + rating * 5 + salesScore + priceScore;
+  const salesScore = Math.log10(sales + 1) * 12;
+  return discount * 2 + rating * 4 + salesScore + priceScore;
 }
 
 function getDailyRange(now: Date): { start: Date; end: Date } {
@@ -112,6 +112,10 @@ export class ShopeeBot {
       if (cleaned > 0) {
         logger.info(`Limpeza: removidos ${cleaned} envios antigos (>90 dias).`);
       }
+      const cleanedNames = await this.db.cleanupSentNamesOlderThan(90);
+      if (cleanedNames > 0) {
+        logger.info(`Limpeza: removidos ${cleanedNames} nomes antigos (>90 dias).`);
+      }
 
       const categories: CategoryKey[] = (
         filterConfig.allowedCategories.length > 0
@@ -132,6 +136,7 @@ export class ShopeeBot {
       logger.info(`Aprovados: ${valid.length} produtos`);
 
       const recentSent = await this.db.getRecentSentKeys("telegram", 24);
+      const recentNames = await this.db.getRecentSentNameKeys("telegram", 72);
       const unsent = valid.filter(
         (p) => !recentSent.has(`${p.itemId}:${p.shopId}`)
       );
@@ -140,7 +145,18 @@ export class ShopeeBot {
       }
       logger.info(`Disponiveis para selecao: ${unsent.length} produtos`);
 
-      const dedupByName = deduplicateByNameBest(unsent);
+      const byNameCooldown = unsent.filter((p) => {
+        const key = normalizeName(p.itemName ?? "");
+        if (!key) return true;
+        return !recentNames.has(key);
+      });
+      if (byNameCooldown.length !== unsent.length) {
+        logger.info(
+          `Ignorando nomes ja enviados (24h): ${unsent.length - byNameCooldown.length}`
+        );
+      }
+
+      const dedupByName = deduplicateByNameBest(byNameCooldown);
       if (dedupByName.length !== unsent.length) {
         logger.info(
           `Deduplicados por nome: ${unsent.length - dedupByName.length} removidos (restante ${dedupByName.length})`
@@ -252,6 +268,14 @@ export class ShopeeBot {
 
         if (tg || wa) {
           sent++;
+          if (tg) {
+            const nameKey = normalizeName(product.itemName ?? "");
+            await this.db.markNameAsSent(nameKey, "telegram");
+          }
+          if (wa) {
+            const nameKey = normalizeName(product.itemName ?? "");
+            await this.db.markNameAsSent(nameKey, "whatsapp");
+          }
           await sleep(SEND_DELAY_MS);
         }
       }
@@ -359,7 +383,24 @@ function normalizeName(name: string): string {
     "turquesa", "grafite", "black", "white", "grey", "gray", "gold", "silver",
   ]);
 
-  const tokens = cleaned.split(" ").filter((t) => t && !colorWords.has(t));
+  const removeWords = new Set([
+    "kit", "combo", "pack", "un", "und", "unid", "unidade", "unidades",
+    "pc", "pcs", "peca", "pecas",
+  ]);
+
+  const isSizeToken = (t: string): boolean => {
+    if (/^\d+$/.test(t)) return true; // numeros puros
+    if (/^\d+(ml|l|g|kg|mg|oz|lb|cm|mm|m|x)$/.test(t)) return true;
+    if (/^(x\d+|\d+x)$/.test(t)) return true;
+    return false;
+  };
+
+  const tokens = cleaned
+    .split(" ")
+    .filter((t) => t)
+    .filter((t) => !colorWords.has(t))
+    .filter((t) => !removeWords.has(t))
+    .filter((t) => !isSizeToken(t));
   return tokens.join(" ").trim();
 }
 

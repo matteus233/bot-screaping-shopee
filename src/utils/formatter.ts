@@ -55,9 +55,10 @@ export function formatTelegram(product: ShopeeProduct, affiliateUrl?: string): s
 
   const tag = categoryTag(product);
   const title = tag ? `${tag} ${escapeHtml(name)}` : escapeHtml(name);
+  const histTag = product._isHistoricalLow ? " 🧊 PRECO HISTORICO" : "";
 
   const lines: string[] = [
-    `${badge} <b>${title}</b>`,
+    `${badge} <b>${title}${histTag}</b>`,
     "",
     `💰 <b>${brl(price)}</b>`,
   ];
@@ -96,9 +97,10 @@ export function formatWhatsApp(product: ShopeeProduct, affiliateUrl?: string): s
 
   const tag = categoryTag(product);
   const title = tag ? `${tag} ${name}` : name;
+  const histTag = product._isHistoricalLow ? " 🧊 PRECO HISTORICO" : "";
 
   const lines: string[] = [
-    `${badge} *${title}*`,
+    `${badge} *${title}${histTag}*`,
     "",
     `💰 *${brl(price)}*`,
   ];

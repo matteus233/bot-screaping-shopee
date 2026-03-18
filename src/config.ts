@@ -44,7 +44,20 @@ export const filterConfig: FilterConfig = {
   historicalPriceCheck: false,
   maxPriceVsHistorical: 1.05,
   keywordsWhitelist: [],
-  keywordsBlacklist: ["replica", "falsificado", "imitacao"],
+  keywordsBlacklist: [
+    "replica",
+    "falsificado",
+    "imitacao",
+    "medidor compressao",
+    "compressao motor",
+    "teste cilindros",
+    "medidor compressao motor",
+    "medidor de compressao",
+    "temporizador irrigacao",
+    "irrigacao automatico",
+    "temporizador torneira",
+    "timer irrigacao",
+  ],
   allowedCategories: ["beleza", "moda_feminina", "casa_decoracao", "creamy", "principia", "océane", "ricca", "medicube", "maquiagem", "ruby rosé", "salonline", "produtos de limpeza", "nívea", "decoracao", "decoração", "eletrodoméstico", "eletrodomestico", "lola"],
 };
 
@@ -55,6 +68,7 @@ export const config: BotConfig = {
     affiliateId: env.SHOPEE_AFFILIATE_ID,
     baseUrl: "https://open-api.affiliate.shopee.com.br/graphql",
   },
+
 
   telegram: {
     token: env.TELEGRAM_BOT_TOKEN,

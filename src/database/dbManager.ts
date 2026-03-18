@@ -48,6 +48,14 @@ export class DatabaseManager {
         CONSTRAINT uq_sent UNIQUE (item_id, shop_id, channel)
       );
 
+      CREATE TABLE IF NOT EXISTS sent_names (
+        id          BIGSERIAL PRIMARY KEY,
+        name_key    TEXT        NOT NULL,
+        channel     TEXT        NOT NULL,
+        sent_at     TIMESTAMPTZ DEFAULT NOW(),
+        CONSTRAINT uq_sent_name UNIQUE (name_key, channel)
+      );
+
       CREATE TABLE IF NOT EXISTS bot_config (
         key         TEXT PRIMARY KEY,
         value       TEXT        NOT NULL,
@@ -190,6 +198,20 @@ export class DatabaseManager {
     );
   }
 
+  async markNameAsSent(
+    nameKey: string,
+    channel: NotificationChannel,
+  ): Promise<void> {
+    if (!nameKey) return;
+    await this.query(
+      `INSERT INTO sent_names (name_key, channel)
+       VALUES ($1, $2)
+       ON CONFLICT ON CONSTRAINT uq_sent_name
+       DO UPDATE SET sent_at = NOW()`,
+      [nameKey, channel],
+    );
+  }
+
   async reserveSend(
     itemId: string,
     shopId: string,
@@ -289,10 +311,41 @@ export class DatabaseManager {
     return set;
   }
 
+  async getRecentSentNameKeys(
+    channel: NotificationChannel,
+    cooldownHours = 24,
+  ): Promise<Set<string>> {
+    const rows = await this.query<{ name_key: string }>(
+      `SELECT name_key
+       FROM sent_names
+       WHERE channel = $1
+         AND sent_at >= NOW() - ($2 || ' hours')::INTERVAL`,
+      [channel, cooldownHours],
+    );
+    const set = new Set<string>();
+    for (const r of rows) {
+      if (r.name_key) set.add(r.name_key);
+    }
+    return set;
+  }
+
   async cleanupSentOlderThan(days = 90): Promise<number> {
     const rows = await this.query<{ count: string }>(
       `WITH deleted AS (
          DELETE FROM sent_products
+         WHERE sent_at < NOW() - ($1 || ' days')::INTERVAL
+         RETURNING 1
+       )
+       SELECT COUNT(*)::text AS count FROM deleted`,
+      [days],
+    );
+    return parseInt(rows[0]?.count ?? "0", 10);
+  }
+
+  async cleanupSentNamesOlderThan(days = 90): Promise<number> {
+    const rows = await this.query<{ count: string }>(
+      `WITH deleted AS (
+         DELETE FROM sent_names
          WHERE sent_at < NOW() - ($1 || ' days')::INTERVAL
          RETURNING 1
        )
