@@ -56,6 +56,14 @@ export class DatabaseManager {
         CONSTRAINT uq_sent_name UNIQUE (name_key, channel)
       );
 
+      CREATE TABLE IF NOT EXISTS sent_coupons (
+        id          BIGSERIAL PRIMARY KEY,
+        coupon_key  TEXT        NOT NULL,
+        channel     TEXT        NOT NULL,
+        sent_at     TIMESTAMPTZ DEFAULT NOW(),
+        CONSTRAINT uq_sent_coupon UNIQUE (coupon_key, channel)
+      );
+
       CREATE TABLE IF NOT EXISTS bot_config (
         key         TEXT PRIMARY KEY,
         value       TEXT        NOT NULL,
@@ -212,6 +220,36 @@ export class DatabaseManager {
     );
   }
 
+  async wasCouponSent(
+    couponKey: string,
+    channel: NotificationChannel,
+    cooldownHours = 72,
+  ): Promise<boolean> {
+    const rows = await this.query<{ exists: boolean }>(
+      `SELECT EXISTS (
+         SELECT 1 FROM sent_coupons
+         WHERE coupon_key = $1
+           AND channel = $2
+           AND sent_at >= NOW() - ($3 || ' hours')::INTERVAL
+       ) AS exists`,
+      [couponKey, channel, cooldownHours],
+    );
+    return rows[0]?.exists === true;
+  }
+
+  async markCouponAsSent(
+    couponKey: string,
+    channel: NotificationChannel,
+  ): Promise<void> {
+    await this.query(
+      `INSERT INTO sent_coupons (coupon_key, channel)
+       VALUES ($1, $2)
+       ON CONFLICT ON CONSTRAINT uq_sent_coupon
+       DO UPDATE SET sent_at = NOW()`,
+      [couponKey, channel],
+    );
+  }
+
   async reserveSend(
     itemId: string,
     shopId: string,
@@ -351,6 +389,35 @@ export class DatabaseManager {
        )
        SELECT COUNT(*)::text AS count FROM deleted`,
       [days],
+    );
+    return parseInt(rows[0]?.count ?? "0", 10);
+  }
+
+  async cleanupSentCouponsOlderThan(days = 90): Promise<number> {
+    const rows = await this.query<{ count: string }>(
+      `WITH deleted AS (
+         DELETE FROM sent_coupons
+         WHERE sent_at < NOW() - ($1 || ' days')::INTERVAL
+         RETURNING 1
+       )
+       SELECT COUNT(*)::text AS count FROM deleted`,
+      [days],
+    );
+    return parseInt(rows[0]?.count ?? "0", 10);
+  }
+
+  async countCouponsSentBetween(
+    channel: NotificationChannel,
+    start: Date,
+    end: Date,
+  ): Promise<number> {
+    const rows = await this.query<{ count: string }>(
+      `SELECT COUNT(*)::text AS count
+       FROM sent_coupons
+       WHERE channel = $1
+         AND sent_at >= $2
+         AND sent_at < $3`,
+      [channel, start.toISOString(), end.toISOString()],
     );
     return parseInt(rows[0]?.count ?? "0", 10);
   }

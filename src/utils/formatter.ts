@@ -1,5 +1,5 @@
 // src/utils/formatter.ts — Formatador de mensagens
-import type { ShopeeProduct } from "../types/index";
+import type { ShopeeCoupon, ShopeeProduct } from "../types/index";
 import { SHOPEE_CATEGORIES } from "../types/index";
 
 function stars(rating: number): string {
@@ -128,4 +128,26 @@ function escapeHtml(text: string): string {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
+}
+
+export function formatTelegramCoupon(coupon: ShopeeCoupon): string {
+  const lines: string[] = [
+    `🎟️ <b>CUPOM SHOPEE</b>`,
+    `<b>${escapeHtml(coupon.title)}</b>`,
+  ];
+
+  if (coupon.discountText) {
+    lines.push(`💸 <b>${escapeHtml(coupon.discountText)}</b>`);
+  }
+
+  if (coupon.couponCode) {
+    lines.push(`🔐 Codigo: <code>${escapeHtml(coupon.couponCode)}</code>`);
+  }
+
+  if (coupon.description) {
+    lines.push(`📝 ${escapeHtml(coupon.description)}`);
+  }
+
+  lines.push(`🔗 <a href="${coupon.couponUrl}">Ativar cupom</a>`);
+  return lines.join("\n");
 }

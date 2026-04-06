@@ -3,10 +3,10 @@ import { Telegraf, type Context } from "telegraf";
 import { config, filterConfig } from "../config";
 import { ShopeeClient } from "../api/shopeeClient";
 import { DatabaseManager } from "../database/dbManager";
-import { formatTelegram } from "../utils/formatter";
+import { formatTelegram, formatTelegramCoupon } from "../utils/formatter";
 import { logger } from "../utils/logger";
 import { SHOPEE_CATEGORIES } from "../types/index";
-import type { ShopeeProduct } from "../types/index";
+import type { ShopeeCoupon, ShopeeProduct } from "../types/index";
 
 export class TelegramNotifier {
   private readonly bot: Telegraf;
@@ -64,6 +64,28 @@ export class TelegramNotifier {
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       logger.error(`[Telegram] Erro ao enviar: ${msg}`);
+      return false;
+    }
+  }
+
+  async sendCoupon(coupon: ShopeeCoupon): Promise<boolean> {
+    if (!config.telegram.enabled) return false;
+
+    const couponKey = `${coupon.source}:${coupon.couponCode ?? coupon.couponId}`;
+    if (await this.db.wasCouponSent(couponKey, "telegram", 72)) {
+      return false;
+    }
+
+    const message = formatTelegramCoupon(coupon);
+    try {
+      await this.bot.telegram.sendMessage(this.channelId, message, {
+        parse_mode: "HTML",
+      });
+      await this.db.markCouponAsSent(couponKey, "telegram");
+      logger.info(`[Telegram] Cupom enviado: ${coupon.couponCode ?? coupon.couponId}`);
+      return true;
+    } catch (err) {
+      logger.error(`[Telegram] Erro ao enviar cupom: ${err}`);
       return false;
     }
   }

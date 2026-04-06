@@ -2,6 +2,7 @@
 import cron from "node-cron";
 import { config, filterConfig } from "./config";
 import { ShopeeClient } from "./api/shopeeClient";
+import { CuponomiaClient } from "./api/cuponomiaClient";
 import { ProductFilter } from "./filters/productFilter";
 import { DatabaseManager } from "./database/dbManager";
 import { TelegramNotifier } from "./notifiers/telegramNotifier";
@@ -75,6 +76,7 @@ export class ShopeeBot {
   private readonly db: DatabaseManager;
   private readonly api: ShopeeClient;
   private readonly filter: ProductFilter;
+  private readonly coupons: CuponomiaClient;
   private readonly telegram: TelegramNotifier;
   private readonly whatsapp: WhatsAppNotifier;
   private running = false;
@@ -84,6 +86,7 @@ export class ShopeeBot {
     this.db = new DatabaseManager();
     this.api = new ShopeeClient();
     this.filter = new ProductFilter(this.db);
+    this.coupons = new CuponomiaClient();
     this.telegram = new TelegramNotifier(this.db);
     this.whatsapp = new WhatsAppNotifier(this.db);
   }
@@ -115,6 +118,10 @@ export class ShopeeBot {
       const cleanedNames = await this.db.cleanupSentNamesOlderThan(90);
       if (cleanedNames > 0) {
         logger.info(`Limpeza: removidos ${cleanedNames} nomes antigos (>90 dias).`);
+      }
+      const cleanedCoupons = await this.db.cleanupSentCouponsOlderThan(90);
+      if (cleanedCoupons > 0) {
+        logger.info(`Limpeza: removidos ${cleanedCoupons} cupons antigos (>90 dias).`);
       }
 
       const categories: CategoryKey[] = (
@@ -280,6 +287,29 @@ export class ShopeeBot {
         }
       }
 
+      let sentCoupons = 0;
+      if (config.coupons.enabled && config.telegram.enabled && !quiet) {
+        const daily = getDailyRange(now);
+        const sentCouponsToday = await this.db.countCouponsSentBetween("telegram", daily.start, daily.end);
+        const remainingCouponsDay = Math.max(0, config.marketing.couponMaxPerDay - sentCouponsToday);
+        const couponCap = Math.min(config.marketing.couponMaxPerCycle, remainingCouponsDay);
+
+        if (couponCap > 0) {
+          const coupons = await this.coupons.fetchShopeeCoupons(20);
+          for (const coupon of coupons) {
+            if (sentCoupons >= couponCap) break;
+            const ok = await this.telegram.sendCoupon(coupon);
+            if (ok) {
+              sentCoupons++;
+              await sleep(SEND_DELAY_MS);
+            }
+          }
+        }
+      }
+
+      if (sentCoupons > 0) {
+        logger.info(`Ciclo cupons: ${sentCoupons} cupom(ns) enviados.`);
+      }
       logger.info(`Ciclo concluido: ${sent} produtos enviados.`);
     } catch (err) {
       logger.error("Erro no ciclo:", err);

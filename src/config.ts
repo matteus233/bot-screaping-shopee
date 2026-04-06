@@ -15,6 +15,7 @@ const EnvSchema = z.object({
   TWILIO_AUTH_TOKEN: z.string().default(""),
   TWILIO_WHATSAPP_FROM: z.string().default(""),
   WHATSAPP_TO: z.string().default(""),
+  CUPONOMIA_ENABLED: z.string().default("true"),
 
   DATABASE_PATH: z.string().default("./data/shopee_bot.db"),
   DATABASE_URL: z.string().min(1),
@@ -69,6 +70,11 @@ export const config: BotConfig = {
     baseUrl: "https://open-api.affiliate.shopee.com.br/graphql",
   },
 
+  coupons: {
+    enabled: env.CUPONOMIA_ENABLED.toLowerCase() !== "false",
+    sourceUrl: "https://www.cuponomia.com.br/desconto/shopee",
+  },
+
 
   telegram: {
     token: env.TELEGRAM_BOT_TOKEN,
@@ -94,6 +100,8 @@ export const config: BotConfig = {
     maxPerDay: 100,
     maxPerCycle: 5,
     minDiscountToSend: 15,
+    couponMaxPerDay: 6,
+    couponMaxPerCycle: 1,
     categoryCaps: {
       beleza: 0.4,
       moda_feminina: 0.3,

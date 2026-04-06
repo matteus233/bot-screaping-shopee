@@ -39,6 +39,16 @@ export interface ShopeeApiResponse<T> {
   data?: T;
 }
 
+export interface ShopeeCoupon {
+  couponId: string;
+  title: string;
+  description?: string;
+  discountText?: string;
+  couponCode?: string;
+  couponUrl: string;
+  source: "cuponomia";
+}
+
 export interface ShopeeOffersData {
   productOffer: ShopeeProduct[];
   totalCount?: number;
@@ -68,6 +78,10 @@ export interface BotConfig {
     affiliateId: string;
     baseUrl: string;
   };
+  coupons: {
+    enabled: boolean;
+    sourceUrl: string;
+  };
   telegram: {
     token: string;
     channelId: string;
@@ -89,6 +103,8 @@ export interface BotConfig {
     maxPerDay: number;
     maxPerCycle: number;
     minDiscountToSend: number;
+    couponMaxPerDay: number;
+    couponMaxPerCycle: number;
     categoryCaps: Record<string, number>;
     quietHours: {
       enabled: boolean;
